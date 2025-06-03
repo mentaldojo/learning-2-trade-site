@@ -232,7 +232,7 @@ export default function Home() {
           Join the traders who have access to the original Market Makers Method and unlimited mentorship from its creator.
         </p>
         <button className="bg-[#FFD700] text-black font-bold px-8 py-4 shadow-lg text-lg transition-all duration-200 uppercase font-sans rounded-full hover:-translate-y-1 hover:shadow-[0_8px_32px_0_rgba(255,215,0,0.5)] focus:outline-none" style={{ fontFamily: 'Montserrat, sans-serif', transition: 'all 0.2s cubic-bezier(.4,0,.2,1)' }}>
-          START YOUR PAT MEMBERSHIP TODAY
+          Experience the power of<br />professional trader mentorship
         </button>
       </section>
 
