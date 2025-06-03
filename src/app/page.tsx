@@ -1,4 +1,7 @@
 import React from 'react';
+import { motion } from 'framer-motion';
+import Testimonials from '../components/Testimonials';
+import FeatureCards from '../components/FeatureCards';
 
 export default function Home() {
   return (
@@ -67,26 +70,7 @@ export default function Home() {
         <h3 className="text-4xl sm:text-5xl font-bold mb-12 text-gray-900 font-serif" style={{ fontFamily: 'Georgia, Times New Roman, serif' }}>
           Finally - An Indicator Based on How Markets Actually Work
         </h3>
-        <div className="flex flex-col md:flex-row gap-8 max-w-6xl mx-auto">
-          <div className="bg-white rounded-2xl shadow-xl flex-1 px-8 py-10 border-t-4 transition-transform duration-200 hover:-translate-y-2 hover:shadow-2xl" style={{ borderTopColor: '#FFD700', fontFamily: 'Montserrat, sans-serif' }}>
-            <h4 className="text-2xl font-extrabold mb-4 text-black font-sans">Market Makers Method</h4>
-            <p className="text-lg text-gray-700 font-light font-sans">
-              The original method I created shows you exactly how institutional traders move the market - because I learned it from working alongside them.
-            </p>
-          </div>
-          <div className="bg-white rounded-2xl shadow-xl flex-1 px-8 py-10 border-t-4 transition-transform duration-200 hover:-translate-y-2 hover:shadow-2xl" style={{ borderTopColor: '#FFD700', fontFamily: 'Montserrat, sans-serif' }}>
-            <h4 className="text-2xl font-extrabold mb-4 text-black font-sans">PAT Indicator</h4>
-            <p className="text-lg text-gray-700 font-light font-sans">
-              Professional Activity Tracker reveals the footprints of big money moves before they happen - giving you the edge retail traders never see.
-            </p>
-          </div>
-          <div className="bg-white rounded-2xl shadow-xl flex-1 px-8 py-10 border-t-4 transition-transform duration-200 hover:-translate-y-2 hover:shadow-2xl" style={{ borderTopColor: '#FFD700', fontFamily: 'Montserrat, sans-serif' }}>
-            <h4 className="text-2xl font-extrabold mb-4 text-black font-sans">Personal Mentorship</h4>
-            <p className="text-lg text-gray-700 font-light font-sans">
-              Unlike other indicator providers, I personally guide every subscriber. You get direct access to my 35+ years of professional trading experience.
-            </p>
-          </div>
-        </div>
+        <FeatureCards />
       </section>
 
       {/* About/Origin Story */}
@@ -94,12 +78,14 @@ export default function Home() {
         <h3 className="text-4xl sm:text-5xl font-bold mb-12 text-gray-900 font-serif" style={{ fontFamily: 'Georgia, Times New Roman, serif' }}>
           The Market Makers Method - My Original Creation
         </h3>
-        <div className="max-w-2xl mx-auto mb-14 mt-10">
+        <div className="max-w-5xl mx-auto mb-14 mt-10">
           <p className="text-xl font-light font-serif italic text-gray-500 mb-6" style={{ fontFamily: 'Georgia, Times New Roman, serif' }}>
-            After 35+ years as a professional trader, I discovered something that changed everything...
+            Early on in my 35+ years as a professional trader, I discovered something that changed everything...
           </p>
           <p className="text-xl font-light font-serif text-gray-700 leading-relaxed" style={{ fontFamily: 'Georgia, Times New Roman, serif' }}>
-            The market doesn't move randomly. It moves with precision, following patterns that institutional traders use to accumulate and distribute their massive positions.
+            Financial markets are not random.
+            <br />
+            They move with precision and follow patterns that institutional traders purposefully create. These created market movements are used to accumulate and distribute their massive positions.
           </p>
         </div>
         <div className="max-w-5xl mx-auto bg-black text-white rounded-3xl shadow-lg p-16 text-center mb-16 border-4 flex flex-col justify-center items-center" style={{ borderColor: '#FFD700' }}>
@@ -135,32 +121,36 @@ export default function Home() {
         }}>
           What You Get With PAT Membership
         </h3>
-        <ul className="max-w-2xl mx-auto text-left space-y-3 text-base font-light font-sans" style={{ fontFamily: 'Montserrat, sans-serif' }}>
-          <li className="flex items-start"><span className="text-[#FFD700] mr-2 mt-1">✔</span>PAT (Professional Activity Tracker) Indicator for TradingView</li>
-          <li className="flex items-start"><span className="text-[#FFD700] mr-2 mt-1">✔</span>Unlimited personal and group mentorship direct from Martin Cole</li>
-          <li className="flex items-start"><span className="text-[#FFD700] mr-2 mt-1">✔</span>Access to all live and recorded training sessions</li>
-          <li className="flex items-start"><span className="text-[#FFD700] mr-2 mt-1">✔</span>No long-term contracts – cancel anytime</li>
-          <li className="flex items-start"><span className="text-[#FFD700] mr-2 mt-1">✔</span>Regular updates and improvements to the indicator</li>
-          <li className="flex items-start"><span className="text-[#FFD700] mr-2 mt-1">✔</span>Includes insights you won't find anywhere else</li>
+        <ul className="max-w-3xl mx-auto text-left space-y-6 text-xl font-light font-serif" style={{ fontFamily: 'Georgia, Times New Roman, serif' }}>
+          <li className="flex items-start">
+            <span className="text-2xl mr-4 mt-1" style={{ color: '#FFD700', textShadow: '0 2px 8px rgba(255,215,0,0.3)' }}>✔</span>
+            PAT (Professional Activity Tracker) Indicator for TradingView
+          </li>
+          <li className="flex items-start">
+            <span className="text-2xl mr-4 mt-1" style={{ color: '#FFD700', textShadow: '0 2px 8px rgba(255,215,0,0.3)' }}>✔</span>
+            Unlimited personal and group mentorship direct from Martin Cole
+          </li>
+          <li className="flex items-start">
+            <span className="text-2xl mr-4 mt-1" style={{ color: '#FFD700', textShadow: '0 2px 8px rgba(255,215,0,0.3)' }}>✔</span>
+            Access to all live and recorded training sessions
+          </li>
+          <li className="flex items-start">
+            <span className="text-2xl mr-4 mt-1" style={{ color: '#FFD700', textShadow: '0 2px 8px rgba(255,215,0,0.3)' }}>✔</span>
+            No long-term contracts – cancel anytime
+          </li>
+          <li className="flex items-start">
+            <span className="text-2xl mr-4 mt-1" style={{ color: '#FFD700', textShadow: '0 2px 8px rgba(255,215,0,0.3)' }}>✔</span>
+            Regular updates and improvements to the indicator
+          </li>
+          <li className="flex items-start">
+            <span className="text-2xl mr-4 mt-1" style={{ color: '#FFD700', textShadow: '0 2px 8px rgba(255,215,0,0.3)' }}>✔</span>
+            Includes insights you won't find anywhere else
+          </li>
         </ul>
       </section>
 
       {/* Testimonials */}
-      <section className="bg-white text-black py-12 px-4">
-        <h3 className="text-xl sm:text-2xl font-bold text-center mb-8 font-sans" style={{ fontFamily: 'Montserrat, sans-serif' }}>
-          What Professional Traders Are Saying
-        </h3>
-        <div className="flex flex-col md:flex-row gap-6 max-w-4xl mx-auto">
-          <div className="bg-yellow-50 border-l-4 rounded-lg p-6 flex-1 shadow text-gray-800 font-sans" style={{ borderLeftColor: '#FFD700', fontFamily: 'Montserrat, sans-serif' }}>
-            <p className="mb-2 italic font-light font-sans">"Martin's Market Makers Method completely transformed my trading. The PAT indicator now actually helps me fully see how money is being... After years of struggling with other systems, this is the one that actually works consistently."</p>
-            <p className="text-sm font-semibold font-sans">– Elite career portfolio manager</p>
-          </div>
-          <div className="bg-yellow-50 border-l-4 rounded-lg p-6 flex-1 shadow text-gray-800 font-sans" style={{ borderLeftColor: '#FFD700', fontFamily: 'Montserrat, sans-serif' }}>
-            <p className="mb-2 italic font-light font-sans">"I tried every indicator out there. PAT is different because Martin actually understands how institutions move money. Now I finally trade with confidence."</p>
-            <p className="text-sm font-semibold font-sans">– Full-time Trader</p>
-          </div>
-        </div>
-      </section>
+      <Testimonials />
 
       {/* Pricing/Offer */}
       <section className="bg-white text-black py-12 px-4">
