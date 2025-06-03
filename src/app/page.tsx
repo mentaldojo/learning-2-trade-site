@@ -89,15 +89,23 @@ export default function Home() {
           </p>
         </div>
         <div className="max-w-5xl mx-auto bg-black text-white rounded-3xl shadow-lg p-16 text-center mb-16 border-4 flex flex-col justify-center items-center" style={{ borderColor: '#FFD700' }}>
-          <h4 className="font-extrabold text-3xl mb-8" style={{ color: '#FFD700', fontFamily: 'Georgia, Times New Roman, serif' }}>
+          <h4 className="font-extrabold text-3xl mb-12" style={{
+            fontFamily: 'Georgia, Times New Roman, serif',
+            background: 'linear-gradient(to bottom, #fffbe6 0%, #ffe066 25%, #FFD700 50%, #bfa14a 75%, #fffbe6 100%)',
+            WebkitBackgroundClip: 'text',
+            WebkitTextFillColor: 'transparent',
+            backgroundClip: 'text',
+            color: 'transparent',
+            textShadow: '0 1px 1px rgba(191,161,74,0.08)'
+          }}>
             I Am The Original Creator of the Market Makers Method
           </h4>
-          <div className="space-y-8 w-full max-w-3xl mx-auto">
-            <p className="text-2xl font-light font-serif leading-relaxed" style={{ fontFamily: 'Georgia, Times New Roman, serif' }}>
+          <div className="space-y-10 w-full max-w-3xl mx-auto">
+            <p className="text-xl font-normal font-serif leading-relaxed text-gray-200" style={{ fontFamily: 'Georgia, Times New Roman, serif' }}>
               What you see being taught by others today started with my research and real-world trading experience.
             </p>
-            <p className="text-2xl font-light font-serif leading-relaxed" style={{ fontFamily: 'Georgia, Times New Roman, serif' }}>
-              This isn't theory - it's battle-tested trading method that's made wealthy traders.
+            <p className="text-xl font-normal font-serif leading-relaxed text-gray-200" style={{ fontFamily: 'Georgia, Times New Roman, serif' }}>
+              This isn't theory - it's a battle-tested trading method that has created successful traders.
             </p>
           </div>
         </div>
@@ -153,16 +161,44 @@ export default function Home() {
       <Testimonials />
 
       {/* Pricing/Offer */}
-      <section className="bg-white text-black py-12 px-4">
-        <h3 className="text-xl sm:text-2xl font-bold text-center mb-6 font-sans" style={{ fontFamily: 'Montserrat, sans-serif' }}>
+      <section className="py-12 px-4" style={{ background: '#fcfbf7', color: '#111' }}>
+        <div className="flex items-center justify-center mb-10">
+          <div className="flex-grow h-0.5 bg-gradient-to-r from-transparent via-[#FFD700] to-transparent" style={{ maxWidth: '180px' }} />
+          <span className="mx-4 flex items-center justify-center">
+            <svg width="40" height="28" viewBox="0 0 40 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M4 20L10 8L20 20L30 8L36 20" stroke="#FFD700" strokeWidth="2.5" strokeLinejoin="round"/>
+              <circle cx="10" cy="8" r="2.5" fill="#FFD700"/>
+              <circle cx="30" cy="8" r="2.5" fill="#FFD700"/>
+              <circle cx="20" cy="20" r="2.5" fill="#FFD700"/>
+              <path d="M8 24H32" stroke="#FFD700" strokeWidth="2" strokeLinecap="round"/>
+            </svg>
+          </span>
+          <div className="flex-grow h-0.5 bg-gradient-to-l from-transparent via-[#FFD700] to-transparent" style={{ maxWidth: '180px' }} />
+        </div>
+        <h3 className="text-3xl sm:text-4xl font-bold text-center mb-10 font-sans" style={{ fontFamily: 'Montserrat, sans-serif' }}>
           Your Investment in Professional Trading Success
         </h3>
-        <div className="max-w-md mx-auto bg-white border border-[#FFD700] rounded-xl shadow p-8 text-center font-sans" style={{ fontFamily: 'Montserrat, sans-serif' }}>
-          <div className="text-4xl font-bold text-gray-900 mb-2 font-sans">$97</div>
-          <div className="text-sm text-gray-700 mb-4 font-light font-sans">per month</div>
-          <div className="font-semibold mb-4 font-sans">PAT Indicator + Unlimited Mentorship</div>
-          <p className="text-gray-700 mb-6 text-sm font-light font-sans">Try PAT risk-free. If you're not completely satisfied, cancel anytime. Nothing long-term required.</p>
-          <button className="bg-[#FFD700] text-black font-bold px-8 py-4 shadow-lg text-lg transition-all duration-200 uppercase font-sans rounded-full hover:-translate-y-1 hover:shadow-[0_8px_32px_0_rgba(255,215,0,0.5)] focus:outline-none" style={{ fontFamily: 'Montserrat, sans-serif', transition: 'all 0.2s cubic-bezier(.4,0,.2,1)' }}>
+        <div className="max-w-xl mx-auto bg-white rounded-3xl shadow-2xl p-12 text-center font-sans border-4" style={{ borderColor: '#FFD700', boxShadow: '0 8px 32px 0 rgba(0,0,0,0.10)' }}>
+          <div className="text-6xl font-extrabold text-gray-900 mb-2 font-sans">$97</div>
+          <div className="text-lg text-gray-700 mb-6 font-light font-sans">per month</div>
+          <div className="text-2xl font-bold mb-6 font-sans">PAT Indicator + Unlimited Mentorship</div>
+          <div className="text-base text-gray-700 mb-8 font-light font-sans">
+            Most professional trading mentorship costs $5,000+ per month. You get the same level of personal attention for a fraction of the cost.
+          </div>
+          <div className="relative bg-[#fcfbf7] border-2 border-[#FFD700] rounded-2xl px-6 py-6 mb-10 flex flex-col items-center" style={{ minHeight: '120px' }}>
+            <div className="absolute -top-7 left-1/2 -translate-x-1/2 bg-[#fcfbf7] rounded-full p-2 border-2 border-[#FFD700] shadow" style={{ boxShadow: '0 2px 8px rgba(255,215,0,0.10)' }}>
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 2L20 6V11C20 16.25 16.25 20.25 12 22C7.75 20.25 4 16.25 4 11V6L12 2Z" fill="#FFD700" stroke="#bfa14a" strokeWidth="1.5"/>
+                <path d="M12 8V13" stroke="#bfa14a" strokeWidth="1.5" strokeLinecap="round"/>
+                <circle cx="12" cy="16" r="1" fill="#bfa14a"/>
+              </svg>
+            </div>
+            <div className="mt-6">
+              <div className="font-bold text-xl mb-2 text-gray-900">No-Risk Guarantee</div>
+              <div className="text-base text-gray-700 font-light">Try PAT risk-free. If you're not completely satisfied, cancel anytime. No long-term commitment required.</div>
+            </div>
+          </div>
+          <button className="w-full bg-gradient-to-r from-[#ffe066] via-[#FFD700] to-[#bfa14a] text-black font-bold py-5 shadow-lg text-xl transition-all duration-200 uppercase font-sans rounded-full hover:-translate-y-1 hover:shadow-[0_8px_32px_0_rgba(255,215,0,0.5)] focus:outline-none" style={{ fontFamily: 'Montserrat, sans-serif', transition: 'all 0.2s cubic-bezier(.4,0,.2,1)' }}>
             GET PAT INDICATOR + MENTORSHIP NOW
           </button>
         </div>
@@ -170,7 +206,15 @@ export default function Home() {
 
       {/* Urgency/Scarcity */}
       <section className="bg-black text-white py-10 px-4 text-center">
-        <h3 className="text-xl sm:text-2xl font-bold mb-2 font-sans" style={{ fontFamily: 'Montserrat, sans-serif' }}>
+        <h3 className="text-xl sm:text-2xl font-bold mb-2 font-sans" style={{
+          fontFamily: 'Montserrat, sans-serif',
+          background: 'linear-gradient(to bottom, #fffbe6 0%, #ffe066 25%, #FFD700 50%, #bfa14a 75%, #fffbe6 100%)',
+          WebkitBackgroundClip: 'text',
+          WebkitTextFillColor: 'transparent',
+          backgroundClip: 'text',
+          color: 'transparent',
+          textShadow: '0 1px 1px rgba(191,161,74,0.08)'
+        }}>
           Why Wait? Your Trading Account Is At Risk Every Day
         </h3>
         <p className="max-w-2xl mx-auto text-gray-300 font-light font-sans" style={{ fontFamily: 'Montserrat, sans-serif' }}>
