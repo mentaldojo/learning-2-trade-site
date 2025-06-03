@@ -6,8 +6,19 @@ import { Inter } from 'next/font/google'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'Learning2Trade',
-  description: 'Learn to trade with confidence',
+  title: 'Professional Trading Success | Market Makers Method & PAT Indicator',
+  description: 'Transform your trading with the original Market Makers Method. Get the PAT Indicator for TradingView and professional mentorship from Martin Cole, a 35+ year trading veteran. Learn how institutional traders move markets.',
+  keywords: 'trading success, professional trading, market makers method, PAT indicator, TradingView indicator, trading mentorship, institutional trading, forex trading, stock trading, trading education',
+  openGraph: {
+    title: 'Professional Trading Success | Market Makers Method & PAT Indicator',
+    description: 'Transform your trading with the original Market Makers Method. Get the PAT Indicator for TradingView and professional mentorship from Martin Cole, a 35+ year trading veteran.',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Professional Trading Success | Market Makers Method & PAT Indicator',
+    description: 'Transform your trading with the original Market Makers Method. Get the PAT Indicator for TradingView and professional mentorship.',
+  }
 }
 
 export default function RootLayout({
@@ -17,6 +28,89 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <head>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Organization",
+              "name": "Learning2Trade",
+              "url": "https://learning2trade.com",
+              "logo": "https://learning2trade.com/logo.png",
+              "description": "Professional trading education and mentorship program offering the Market Makers Method and PAT Indicator.",
+              "founder": {
+                "@type": "Person",
+                "name": "Martin Cole",
+                "jobTitle": "Professional Trader",
+                "description": "35+ years of professional trading experience"
+              },
+              "offers": {
+                "@type": "Offer",
+                "name": "PAT Indicator + Professional Trading Mentorship",
+                "description": "Professional trading system including the PAT Indicator for TradingView and unlimited mentorship from Martin Cole.",
+                "price": "97",
+                "priceCurrency": "USD",
+                "priceValidUntil": "2024-12-31",
+                "availability": "https://schema.org/InStock",
+                "url": "https://learning2trade.com",
+                "offeredBy": {
+                  "@type": "Organization",
+                  "name": "Learning2Trade"
+                }
+              }
+            })
+          }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "Product",
+              "name": "PAT Indicator + Professional Trading Mentorship",
+              "description": "Professional trading system including the PAT Indicator for TradingView and unlimited mentorship from Martin Cole.",
+              "brand": {
+                "@type": "Brand",
+                "name": "Learning2Trade"
+              },
+              "manufacturer": {
+                "@type": "Organization",
+                "name": "Learning2Trade"
+              },
+              "offers": {
+                "@type": "Offer",
+                "price": "97",
+                "priceCurrency": "USD",
+                "priceValidUntil": "2024-12-31",
+                "availability": "https://schema.org/InStock",
+                "url": "https://learning2trade.com"
+              },
+              "featureList": [
+                "PAT (Professional Activity Tracker) Indicator for TradingView",
+                "Unlimited personal and group mentorship",
+                "Access to all live and recorded training sessions",
+                "No long-term contracts",
+                "Regular updates and improvements",
+                "Exclusive trading insights"
+              ],
+              "review": {
+                "@type": "Review",
+                "reviewRating": {
+                  "@type": "Rating",
+                  "ratingValue": "5",
+                  "bestRating": "5"
+                },
+                "author": {
+                  "@type": "Person",
+                  "name": "Mike"
+                },
+                "reviewBody": "After years of struggling with traditional trading indicators, the PAT Indicator finally showed me how to spot institutional money flow. Martin's mentorship helped me develop a consistent trading edge."
+              }
+            })
+          }}
+        />
+      </head>
       <body className={inter.className}>{children}</body>
     </html>
   )
