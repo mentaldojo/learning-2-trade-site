@@ -237,9 +237,21 @@ export default function Home() {
       </section>
 
       {/* Footer */}
-      <footer className="bg-black text-gray-400 text-center py-4 sm:py-6 text-xs border-t border-gray-800 font-light font-sans" style={{ fontFamily: 'Montserrat, sans-serif' }}>
-        <div>© 2024 Martin Cole – Professional Trading Education</div>
-        <div className="mt-1">Not a licensed financial trading organization.</div>
+      <footer className="bg-black text-gray-400 py-4 sm:py-6 text-xs border-t border-gray-800 font-light font-sans" style={{ fontFamily: 'Montserrat, sans-serif' }}>
+        <div className="max-w-7xl mx-auto px-4 flex flex-col sm:flex-row items-center justify-between">
+          <div className="text-left mb-4 sm:mb-0">
+            <div>© 2024 Martin Cole – Professional Trading Education</div>
+            <div className="mt-1">Not a licensed financial trading organization.</div>
+          </div>
+          
+          <div className="flex flex-wrap justify-center gap-x-6 gap-y-2">
+            <a href="/disclaimer" className="text-[#FFD700] hover:text-[#bfa14a] transition-colors duration-200">Disclaimer Policy</a>
+            <a href="/privacy" className="text-[#FFD700] hover:text-[#bfa14a] transition-colors duration-200">Privacy Policy</a>
+            <a href="/terms" className="text-[#FFD700] hover:text-[#bfa14a] transition-colors duration-200">Terms & Conditions</a>
+            <a href="/cookies" className="text-[#FFD700] hover:text-[#bfa14a] transition-colors duration-200">Cookie Policy</a>
+            <a href="/accessibility" className="text-[#FFD700] hover:text-[#bfa14a] transition-colors duration-200">Accessibility</a>
+          </div>
+        </div>
       </footer>
     </main>
   );

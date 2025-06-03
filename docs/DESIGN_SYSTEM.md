@@ -174,6 +174,22 @@ sm:mb-16: 4rem      /* 64px */
 </motion.div>
 ```
 
+### Animation Best Practices
+1. **Immediate Content Visibility**
+   - Always show critical content (headers, first section) immediately
+   - Use animations for subsequent content that appears on scroll
+   - Never hide essential information behind animations
+
+2. **Performance Considerations**
+   - Use `viewport={{ once: true }}` to prevent re-animations
+   - Keep animations simple and subtle
+   - Avoid animating large sections of content simultaneously
+
+3. **Animation Configuration**
+   - Create reusable animation configurations
+   - Use consistent timing and easing functions
+   - Maintain accessibility by not relying solely on animations
+
 ### Hover Effects
 ```css
 /* Button Hover */
@@ -183,6 +199,56 @@ hover:shadow-[0_8px_32px_0_rgba(255,215,0,0.5)]
 /* Transition */
 transition: all 0.2s cubic-bezier(.4,0,.2,1)
 ```
+
+## Component Architecture
+
+### Server vs Client Components
+1. **Server Components (Default)**
+   - Use for static content and layout
+   - Better performance and smaller bundle size
+   - Can't use hooks or browser APIs
+   - Can't use event listeners
+
+2. **Client Components**
+   - Mark with `'use client'` directive
+   - Use for interactive elements and animations
+   - Can use hooks, browser APIs, and event listeners
+   - Keep client components as small as possible
+
+### Best Practices
+1. **Component Structure**
+   ```jsx
+   // page.tsx (Server Component)
+   export default function Page() {
+     return (
+       <main>
+         <AnimatedContent /> {/* Client Component */}
+       </main>
+     );
+   }
+
+   // AnimatedContent.tsx (Client Component)
+   'use client';
+   export default function AnimatedContent() {
+     return (
+       <motion.div>
+         {/* Animated content */}
+       </motion.div>
+     );
+   }
+   ```
+
+2. **Animation Component Pattern**
+   - Create separate client components for animated content
+   - Keep animations isolated in client components
+   - Use server components for layout and static content
+   - Pass data through props when needed
+
+3. **Performance Optimization**
+   - Minimize client-side JavaScript
+   - Use server components by default
+   - Only mark components as client when necessary
+   - Keep client components focused and small
 
 ## Responsive Design
 
