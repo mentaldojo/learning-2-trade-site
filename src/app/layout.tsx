@@ -50,6 +50,12 @@ export default function RootLayout({
                 "jobTitle": "Professional Trader",
                 "description": "35+ years of professional trading experience"
               },
+              "contactPoint": {
+                "@type": "ContactPoint",
+                "contactType": "customer service",
+                "email": "supportpat@learningtotrade.com",
+                "availableLanguage": "English"
+              },
               "offers": {
                 "@type": "Offer",
                 "name": "PAT Indicator + Professional Trading Mentorship",
