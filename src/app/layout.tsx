@@ -7,6 +7,7 @@ import Footer from '../components/layout/Footer'
 import KeyboardNavigation from '../components/accessibility/KeyboardNavigation'
 import ScreenReaderSupport from '../components/accessibility/ScreenReaderSupport'
 import HighContrastToggle from '../components/accessibility/HighContrastToggle'
+import Script from 'next/script'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -34,6 +35,19 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+        {/* Google Analytics */}
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-6RMP3C7SDE"
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-6RMP3C7SDE');
+          `}
+        </Script>
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
