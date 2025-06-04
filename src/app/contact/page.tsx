@@ -75,7 +75,7 @@ export default function ContactPage() {
               </code>
             </div>
             <p className="text-lg text-red-600 mt-4">
-              Before you send the email, remove the (AT)" and replace it with @.
+              Before you send the email, remove the (AT)&quot; and replace it with @.
             </p>
             <p className="text-lg text-red-600">
               This is an anti-spam measure.
