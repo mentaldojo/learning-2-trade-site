@@ -61,7 +61,7 @@ export default function CookiePolicy() {
           </section>
 
           {/* What Are Cookies */}
-          <section className="bg-white rounded-2xl shadow-xl p-8 border-t-4" style={{ borderTopColor: '#FFD700' }}>
+          <section>
             <h2 className="text-2xl sm:text-3xl font-bold mb-4 font-serif" style={{ color: '#bfa14a' }}>What Are Cookies</h2>
             <div className="space-y-4">
               <p className="text-lg leading-relaxed">
@@ -105,7 +105,7 @@ export default function CookiePolicy() {
           </section>
 
           {/* Managing Cookies */}
-          <section className="bg-white rounded-2xl shadow-xl p-8 border-t-4" style={{ borderTopColor: '#FFD700' }}>
+          <section>
             <h2 className="text-2xl sm:text-3xl font-bold mb-4 font-serif" style={{ color: '#bfa14a' }}>Managing Cookies</h2>
             <p className="text-lg leading-relaxed">
               You can control and manage cookies in your browser settings. However, please note that:
@@ -133,6 +133,13 @@ export default function CookiePolicy() {
               If you have any questions about this Cookie Policy, please contact me through the website&apos;s contact form or email support.
             </p>
           </section>
+
+          {/* Last Updated */}
+          <div className="mt-12 pt-8 border-t border-gray-200">
+            <p className="text-sm text-gray-500">
+              Last updated: March 19, 2024
+            </p>
+          </div>
         </div>
       </div>
     </main>
