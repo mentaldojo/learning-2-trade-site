@@ -6,6 +6,7 @@ const navLinks = [
   { href: '/mentoring', label: 'Trader Mentoring' },
   { href: 'https://martincole.thrivecart.com/l/', label: 'Training Portal' },
   { href: 'https://blog.learningtotrade.com', label: 'Trading Videos' },
+  { href: '/contact', label: 'Contact Me' },
 ];
 
 export default function TopNav() {
@@ -28,7 +29,7 @@ export default function TopNav() {
             <Link
               key={link.href}
               href={link.href}
-              className="relative text-[#faf9f6]/80 hover:text-[#FFD700] font-medium transition-all duration-300 text-sm tracking-wide uppercase px-2 py-1 group"
+              className="relative text-[#faf9f6]/80 hover:text-[#FFD700] font-light transition-all duration-300 text-xs tracking-wide uppercase px-2 py-1 group"
             >
               {link.label}
               <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-[#FFD700] transition-all duration-300 group-hover:w-full"></span>

@@ -9,7 +9,7 @@ export default function Footer() {
           <div className="mt-1">Not a licensed financial trading organization.</div>
         </div>
         
-        <div className="flex flex-wrap justify-center gap-x-6 gap-y-2">
+        <div className="flex flex-wrap justify-center gap-x-6 gap-y-2 pr-16">
           <Link href="/disclaimer" className="text-[#FFD700] hover:text-[#bfa14a] transition-colors duration-200">Disclaimer Policy</Link>
           <Link href="/privacy-policy" className="text-[#FFD700] hover:text-[#bfa14a] transition-colors duration-200">Privacy Policy</Link>
           <Link href="/terms-and-conditions" className="text-[#FFD700] hover:text-[#bfa14a] transition-colors duration-200">Terms & Conditions</Link>

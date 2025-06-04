@@ -1,5 +1,5 @@
 import { Metadata } from 'next';
-import ContactForm from './ContactForm';
+import Image from 'next/image';
 
 export const metadata: Metadata = {
   title: 'Contact Me | Learning2Trade',
@@ -42,12 +42,45 @@ export default function ContactPage() {
           Contact Me
         </h1>
 
+        {/* Profile Image */}
+        <div className="flex justify-center mb-8">
+          <div className="relative w-56 h-56 sm:w-80 sm:h-80 rounded-full overflow-hidden border-2" style={{ 
+            borderColor: '#FFD700',
+            boxShadow: '0 10px 40px rgba(0,0,0,0.15), 0 0 0 1px rgba(255,215,0,0.1), 0 0 20px rgba(255,215,0,0.1)'
+          }}>
+            <Image
+              src="/images/people/Martin White Shirt 400.png"
+              alt="Martin Cole - Trading Mentor"
+              fill
+              sizes="(max-width: 640px) 224px, 320px"
+              className="object-cover"
+              style={{ objectPosition: '50% 40%' }}
+              priority
+            />
+          </div>
+        </div>
+
         <div className="bg-white rounded-2xl shadow-xl p-8 border-t-4" style={{ borderTopColor: '#FFD700' }}>
           <p className="text-lg text-gray-700 mb-8 text-center">
-            Have questions about our trading mentorship? I&apos;m here to help. Fill out the form below and I&apos;ll get back to you within 24 hours.
+            Have questions about my trading mentorship and the pattern indicator? I am here to help. Send me an email and I&apos;ll get back to you within 24 hours.
           </p>
 
-          <ContactForm />
+          <div className="text-center">
+            <p className="text-lg text-gray-700 mb-4">
+              Please send me a personal email to the address below.
+            </p>
+            <div className="bg-gray-50 rounded-lg p-4 inline-block">
+              <code className="text-lg font-mono text-gray-800">
+                supportpat(AT)learningtotrade.com
+              </code>
+            </div>
+            <p className="text-lg text-red-600 mt-4">
+              Before you send the email, remove the (AT)" and replace it with @.
+            </p>
+            <p className="text-lg text-red-600">
+              This is an anti-spam measure.
+            </p>
+          </div>
         </div>
       </div>
     </main>
