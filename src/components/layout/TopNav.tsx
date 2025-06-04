@@ -1,4 +1,7 @@
+'use client';
+
 import Link from 'next/link';
+import { useState } from 'react';
 
 const navLinks = [
   { href: '/', label: 'Home' },
@@ -10,6 +13,12 @@ const navLinks = [
 ];
 
 export default function TopNav() {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
   return (
     <nav className="w-full bg-black/95 backdrop-blur border-b border-[#FFD700]/20 shadow-sm sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-4 flex items-center justify-between h-16">
@@ -39,12 +48,38 @@ export default function TopNav() {
         {/* Mobile menu button */}
         <button 
           className="md:hidden p-2 rounded-lg hover:bg-white/5 transition-colors duration-200"
-          aria-label="Open menu"
+          aria-label={isMenuOpen ? "Close menu" : "Open menu"}
+          aria-expanded={isMenuOpen}
+          onClick={toggleMenu}
         >
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className="text-[#faf9f6]">
-            <path d="M4 6H20M4 12H20M4 18H20" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+            {isMenuOpen ? (
+              <path d="M6 18L18 6M6 6l12 12" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+            ) : (
+              <path d="M4 6H20M4 12H20M4 18H20" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+            )}
           </svg>
         </button>
+      </div>
+
+      {/* Mobile menu */}
+      <div 
+        className={`md:hidden absolute w-full bg-black/95 backdrop-blur border-b border-[#FFD700]/20 transition-all duration-300 ease-in-out ${
+          isMenuOpen ? 'opacity-100 visible' : 'opacity-0 invisible'
+        }`}
+      >
+        <div className="px-4 py-2 space-y-1">
+          {navLinks.map(link => (
+            <Link
+              key={link.href}
+              href={link.href}
+              className="block text-[#faf9f6]/80 hover:text-[#FFD700] font-light transition-all duration-300 text-sm tracking-wide uppercase py-3 px-2 hover:bg-white/5 rounded-lg"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              {link.label}
+            </Link>
+          ))}
+        </div>
       </div>
     </nav>
   );
