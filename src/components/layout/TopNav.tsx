@@ -2,8 +2,8 @@ import Link from 'next/link';
 
 const navLinks = [
   { href: '/', label: 'Home' },
-  { href: '/pat', label: 'P.A.T. – Indicator' },
-  { href: '/mentoring', label: 'Mentoring' },
+  { href: '/pat-indicator', label: 'P.A.T. – Indicator' },
+  { href: '/mentoring', label: 'Trader Mentoring' },
   { href: '/training', label: 'Training Portal' },
   { href: '/blog', label: 'Blog' },
 ];

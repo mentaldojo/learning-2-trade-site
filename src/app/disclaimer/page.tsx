@@ -9,6 +9,22 @@ export const metadata: Metadata = {
 export default function DisclaimerPage() {
   return (
     <main className="min-h-screen bg-white">
+      {/* Hero Section */}
+      <section className="bg-black text-white py-16 sm:py-24 px-4 text-center">
+        <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold font-serif mb-6" style={{
+          background: 'linear-gradient(to bottom, #fffbe6 0%, #ffe066 25%, #FFD700 50%, #bfa14a 75%, #fffbe6 100%)',
+          WebkitBackgroundClip: 'text',
+          WebkitTextFillColor: 'transparent',
+          backgroundClip: 'text',
+          color: 'transparent',
+        }}>
+          Disclaimer Policy
+        </h1>
+        <p className="text-lg sm:text-xl text-[#FFD700] mb-8 max-w-2xl mx-auto font-light">
+          Important information about the use of the PAT Indicator and my mentoring services. Please read carefully before using this site or my services.
+        </p>
+      </section>
+
       <section className="max-w-4xl mx-auto px-4 py-12 sm:py-24">
         <h1 className="text-4xl sm:text-5xl font-bold mb-4 text-center font-serif" style={{
           background: 'linear-gradient(to bottom, #fffbe6 0%, #ffe066 25%, #FFD700 50%, #bfa14a 75%, #fffbe6 100%)',
@@ -69,7 +85,7 @@ export default function DisclaimerPage() {
 
           <h2 className="text-2xl font-bold mt-12 mb-6 text-gray-900">No Warranties</h2>
           <p className="text-gray-700 mb-8">
-            All content and services are provided "as is" without any warranties, express or implied, including but not limited to warranties of accuracy, completeness, or fitness for a particular purpose. We disclaim all liability for any direct, indirect, or consequential damages arising from the use of our website, PAT Indicator, or mentorship services.
+            All content and services are provided &quot;as is&quot; without any warranties, express or implied, including but not limited to warranties of accuracy, completeness, or fitness for a particular purpose. We disclaim all liability for any direct, indirect, or consequential damages arising from the use of our website, PAT Indicator, or mentorship services.
           </p>
 
           <h2 className="text-2xl font-bold mt-12 mb-6 text-gray-900">Intellectual Property</h2>

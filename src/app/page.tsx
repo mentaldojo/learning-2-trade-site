@@ -36,7 +36,7 @@ export default function Home() {
           Master Professional Trading with<br className="hidden sm:block" />The Market Makers Method
         </h1>
         <p className="relative z-10 text-sm sm:text-base md:text-lg text-white mb-2 sm:mb-3 font-light font-sans px-4" style={{ fontFamily: 'Montserrat, sans-serif' }}>
-          Professional Trading Success: PAT Indicator + Expert Mentorship<br className="hidden sm:block" />
+          Professional Trading Success: PAT Indicator + Personal Mentorship<br className="hidden sm:block" />
           Learn How Institutional Traders Move Markets
         </p>
         <p className="relative z-10 text-sm sm:text-base font-bold mb-6 sm:mb-8 font-light font-sans text-[#FFD700] px-4" style={{ fontFamily: 'Montserrat, sans-serif' }}>
@@ -54,13 +54,13 @@ export default function Home() {
         </h2>
         <div className="max-w-3xl mx-auto">
           <p className="text-lg sm:text-xl mb-4 sm:mb-6 font-light text-gray-700 font-serif px-4" style={{ fontFamily: 'Georgia, Times New Roman, serif' }}>
-            Most retail traders fail because they're using outdated indicators that don't reflect how markets actually move.
+            Most retail traders fail because they&apos;re using outdated indicators that don&apos;t reflect how markets actually move.
           </p>
           <p className="text-lg sm:text-xl mb-4 sm:mb-6 font-light text-gray-700 font-serif px-4" style={{ fontFamily: 'Georgia, Times New Roman, serif' }}>
-            They're following strategies created by academics who've never traded professionally.
+            They&apos;re following strategies created by academics who&apos;ve never traded professionally.
           </p>
           <p className="text-lg sm:text-xl font-light text-gray-700 font-serif px-4" style={{ fontFamily: 'Georgia, Times New Roman, serif' }}>
-            That's why 97% of traders lose money – they're missing the institutional edge.
+            That&apos;s why 97% of traders lose money – they&apos;re missing the institutional edge.
           </p>
         </div>
       </section>
@@ -105,7 +105,7 @@ export default function Home() {
               What you see being taught by others today started with my research and real-world trading experience.
             </p>
             <p className="text-lg sm:text-xl font-normal font-serif leading-relaxed text-gray-200 px-4" style={{ fontFamily: 'Georgia, Times New Roman, serif' }}>
-              This isn't theory - it's a battle-tested trading method that has created successful traders.
+              This isn&apos;t theory - it&apos;s a battle-tested trading method that has created successful traders.
             </p>
           </div>
         </div>
@@ -136,7 +136,7 @@ export default function Home() {
           </li>
           <li className="flex items-start">
             <span className="text-2xl mr-4 mt-1" style={{ color: '#FFD700', textShadow: '0 2px 8px rgba(255,215,0,0.3)' }}>✔</span>
-            Unlimited personal and group mentorship direct from Martin Cole
+            Personal, one-on-one mentorship direct from Martin Cole
           </li>
           <li className="flex items-start">
             <span className="text-2xl mr-4 mt-1" style={{ color: '#FFD700', textShadow: '0 2px 8px rgba(255,215,0,0.3)' }}>✔</span>
@@ -152,7 +152,7 @@ export default function Home() {
           </li>
           <li className="flex items-start">
             <span className="text-2xl mr-4 mt-1" style={{ color: '#FFD700', textShadow: '0 2px 8px rgba(255,215,0,0.3)' }}>✔</span>
-            Includes insights you won't find anywhere else
+            Includes insights you won&apos;t find anywhere else
           </li>
         </ul>
       </section>
@@ -195,7 +195,7 @@ export default function Home() {
             </div>
             <div className="mt-4 sm:mt-6">
               <h3 className="font-bold text-lg sm:text-xl mb-2 text-gray-900">No-Risk Guarantee</h3>
-              <div className="text-sm sm:text-base text-gray-700 font-light">Try PAT risk-free. If you're not completely satisfied, cancel anytime. No long-term commitment required.</div>
+              <div className="text-sm sm:text-base text-gray-700 font-light">Try PAT risk-free. If you&apos;re not completely satisfied, cancel anytime. No long-term commitment required.</div>
             </div>
           </div>
           <button className="w-full bg-gradient-to-r from-[#ffe066] via-[#FFD700] to-[#bfa14a] text-black font-bold py-4 sm:py-5 shadow-lg text-lg sm:text-xl transition-all duration-200 uppercase font-sans rounded-full hover:-translate-y-1 hover:shadow-[0_8px_32px_0_rgba(255,215,0,0.5)] focus:outline-none" style={{ fontFamily: 'Montserrat, sans-serif', transition: 'all 0.2s cubic-bezier(.4,0,.2,1)' }}>
@@ -219,7 +219,7 @@ export default function Home() {
         </h3>
         <p className="max-w-2xl mx-auto text-sm sm:text-base text-gray-300 font-light font-sans px-4" style={{ fontFamily: 'Montserrat, sans-serif' }}>
           Every day you trade without the proper method or indicator is another day your capital is unnecessarily at risk.<br className="hidden sm:block" />
-          The market doesn't wait for you to figure it out. Get the edge you need today.
+          The market doesn&apos;t wait for you to figure it out. Get the edge you need today.
         </p>
       </section>
 
@@ -229,7 +229,7 @@ export default function Home() {
           Ready to Trade Like a Professional?
         </h3>
         <p className="mb-6 font-light font-sans px-4" style={{ fontFamily: 'Montserrat, sans-serif' }}>
-          Join the traders who have access to the original Market Makers Method and unlimited mentorship from its creator.
+          Get access to the original Market Makers Method and personal, one-on-one mentorship from its creator.
         </p>
         <button className="bg-[#FFD700] text-black font-bold px-6 sm:px-8 py-3 sm:py-4 shadow-lg text-base sm:text-lg transition-all duration-200 uppercase font-sans rounded-full hover:-translate-y-1 hover:shadow-[0_8px_32px_0_rgba(255,215,0,0.5)] focus:outline-none" style={{ fontFamily: 'Montserrat, sans-serif', transition: 'all 0.2s cubic-bezier(.4,0,.2,1)' }}>
           Experience the power of<br className="hidden sm:block" />professional trader mentorship
@@ -246,7 +246,7 @@ export default function Home() {
           
           <div className="flex flex-wrap justify-center gap-x-6 gap-y-2">
             <a href="/disclaimer" className="text-[#FFD700] hover:text-[#bfa14a] transition-colors duration-200">Disclaimer Policy</a>
-            <a href="/privacy" className="text-[#FFD700] hover:text-[#bfa14a] transition-colors duration-200">Privacy Policy</a>
+            <a href="/privacy-policy" className="text-[#FFD700] hover:text-[#bfa14a] transition-colors duration-200">Privacy Policy</a>
             <a href="/terms" className="text-[#FFD700] hover:text-[#bfa14a] transition-colors duration-200">Terms & Conditions</a>
             <a href="/cookies" className="text-[#FFD700] hover:text-[#bfa14a] transition-colors duration-200">Cookie Policy</a>
             <a href="/accessibility" className="text-[#FFD700] hover:text-[#bfa14a] transition-colors duration-200">Accessibility</a>

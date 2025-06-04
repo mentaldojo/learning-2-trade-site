@@ -17,10 +17,10 @@ export default function TraderMentoringPage() {
           backgroundClip: 'text',
           color: 'transparent',
         }}>
-          Unlock Your Trading Potential<br />with Personal Mentoring
+          Trader Mentoring
         </h1>
         <p className="text-lg sm:text-xl text-[#FFD700] mb-8 max-w-2xl mx-auto font-light">
-          The fastest path to trading mastery is direct, personal guidance. Experience the difference of true one-on-one mentorship—integrated with the P.A.T. Indicator and my decades of professional trading experience.
+          Unlock your trading potential with direct, personal one-on-one guidance from a professional trader. My mentoring is tailored to you and fully integrated with the P.A.T. Indicator.
         </p>
         <Link href="#action" className="bg-[#FFD700] text-black font-bold px-8 py-4 rounded-full text-lg shadow-lg hover:-translate-y-1 hover:shadow-[0_8px_32px_0_rgba(255,215,0,0.5)] transition-all duration-200 uppercase">Start Your Journey</Link>
       </section>

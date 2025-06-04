@@ -41,7 +41,7 @@ export default function FeatureCards() {
       >
         <h3 className="text-2xl font-bold mb-4 text-black font-sans">Expert Trading Mentorship</h3>
         <p className="text-lg text-gray-700 font-light leading-relaxed font-sans">
-          Get personalized guidance from a professional trader. Learn proven strategies, risk management, and how to develop a consistent trading edge.
+          Get personal, one-on-one guidance from a professional trader. Learn proven strategies, risk management, and how to develop a consistent trading edge with direct support.
         </p>
       </motion.div>
     </div>

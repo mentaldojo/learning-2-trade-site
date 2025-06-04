@@ -2,6 +2,7 @@ import React from 'react'
 import './globals.css'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
+import TopNav from '../components/layout/TopNav'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -111,7 +112,10 @@ export default function RootLayout({
           }}
         />
       </head>
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        <TopNav />
+        {children}
+      </body>
     </html>
   )
 } 

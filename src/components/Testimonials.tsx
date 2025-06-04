@@ -22,7 +22,7 @@ export default function Testimonials() {
         >
           <span className="absolute left-8 top-6 text-4xl" style={{ color: '#FFD700' }}>&ldquo;</span>
           <p className="italic text-lg font-light font-serif leading-relaxed mb-8" style={{ fontFamily: 'Georgia, Times New Roman, serif' }}>
-            "After years of struggling with traditional trading indicators, the PAT Indicator finally showed me how to spot institutional money flow. Martin's mentorship helped me develop a consistent trading edge. This is the professional trading education I've been looking for."
+            &ldquo;After years of struggling with traditional trading indicators, the PAT Indicator finally showed me how to spot institutional money flow. Martin&apos;s mentorship helped me develop a consistent trading edge. This is the professional trading education I&apos;ve been looking for.&rdquo;
           </p>
           <div className="font-bold text-lg font-serif" style={{ fontFamily: 'Georgia, Times New Roman, serif' }}>
             - Mike, Full-Time Trader
@@ -41,7 +41,7 @@ export default function Testimonials() {
         >
           <span className="absolute left-8 top-6 text-4xl" style={{ color: '#FFD700' }}>&ldquo;</span>
           <p className="italic text-lg font-light font-serif leading-relaxed mb-8" style={{ fontFamily: 'Georgia, Times New Roman, serif' }}>
-            "The Market Makers Method is different from everything else I've tried. It's not just another trading indicator - it's a complete professional trading system. Martin's mentorship has been invaluable in helping me understand how to trade like the institutions."
+            &ldquo;The Market Makers Method is different from everything else I&apos;ve tried. It&apos;s not just another trading indicator - it&apos;s a complete professional trading system. Martin&apos;s mentorship has been invaluable in helping me understand how to trade like the institutions.&rdquo;
           </p>
           <div className="font-bold text-lg font-serif" style={{ fontFamily: 'Georgia, Times New Roman, serif' }}>
             - Sarah, Professional Trader

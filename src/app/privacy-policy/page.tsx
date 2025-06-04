@@ -9,6 +9,22 @@ export const metadata: Metadata = {
 export default function PrivacyPolicy() {
   return (
     <main className="min-h-screen bg-white">
+      {/* Hero Section */}
+      <section className="bg-black text-white py-16 sm:py-24 px-4 text-center">
+        <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold font-serif mb-6" style={{
+          background: 'linear-gradient(to bottom, #fffbe6 0%, #ffe066 25%, #FFD700 50%, #bfa14a 75%, #fffbe6 100%)',
+          WebkitBackgroundClip: 'text',
+          WebkitTextFillColor: 'transparent',
+          backgroundClip: 'text',
+          color: 'transparent',
+        }}>
+          Privacy Policy
+        </h1>
+        <p className="text-lg sm:text-xl text-[#FFD700] mb-8 max-w-2xl mx-auto font-light">
+          Learn how your information is collected, used, and protected. Your privacy and trust are important to me.
+        </p>
+      </section>
+
       <section className="max-w-4xl mx-auto px-4 py-12 sm:py-24">
         <h1 className="text-4xl sm:text-5xl font-bold mb-4 text-center font-serif" style={{
           background: 'linear-gradient(to bottom, #fffbe6 0%, #ffe066 25%, #FFD700 50%, #bfa14a 75%, #fffbe6 100%)',
@@ -40,7 +56,7 @@ export default function PrivacyPolicy() {
 
           <h2 className="text-2xl font-bold mt-12 mb-6 text-gray-900">Personal Information We Collect</h2>
           <p className="text-gray-700 mb-8">
-            When you visit the Learning To Trade, we automatically collect certain information about your device, including information about your web browser, IP address, time zone, and some of the installed cookies on your device. Additionally, as you browse the Site, we collect information about the individual web pages or products you view, what websites or search terms referred you to the Site, and how you interact with the Site. We refer to this automatically collected information as "Device Information." Moreover, we might collect the personal data you provide to us (including but not limited to Name, Surname, Address, payment information, etc.) during registration to be able to fulfil the agreement.
+            When you visit the Learning To Trade, we automatically collect certain information about your device, including information about your web browser, IP address, time zone, and some of the installed cookies on your device. Additionally, as you browse the Site, we collect information about the individual web pages or products you view, what websites or search terms referred you to the Site, and how you interact with the Site. We refer to this automatically collected information as &quot;Device Information.&quot; Moreover, we might collect the personal data you provide to us (including but not limited to Name, Surname, Address, payment information, etc.) during registration to be able to fulfil the agreement.
           </p>
 
           <h2 className="text-2xl font-bold mt-12 mb-6 text-gray-900">Why Do We Process Your Data?</h2>
@@ -49,7 +65,7 @@ export default function PrivacyPolicy() {
           </p>
 
           <p className="text-gray-700 mb-8">
-            You can visit the website without telling us who you are or revealing any information by which someone could identify you as a specific, identifiable individual. If, however, you wish to use some of the website's features, or you wish to receive our newsletter or provide other details by filling out a form, you may provide personal data to us, such as your email, first name, last name, city of residence, organisation, telephone number. You can choose not to provide us with your personal data, but then you may not be able to take advantage of some of the website's features. For example, you won't be able to receive our Newsletter or contact us directly from the website. Users who are uncertain about what information is mandatory are welcome to contact us via support@learningtotrade.com.
+            You can visit the website without telling us who you are or revealing any information by which someone could identify you as a specific, identifiable individual. If, however, you wish to use some of the website&apos;s features, or you wish to receive our newsletter or provide other details by filling out a form, you may provide personal data to us, such as your email, first name, last name, city of residence, organisation, telephone number. You can choose not to provide us with your personal data, but then you may not be able to take advantage of some of the website&apos;s features. For example, you won&apos;t be able to receive our Newsletter or contact us directly from the website. Users who are uncertain about what information is mandatory are welcome to contact us via support@learningtotrade.com.
           </p>
 
           <h2 className="text-2xl font-bold mt-12 mb-6 text-gray-900">Your Rights</h2>
