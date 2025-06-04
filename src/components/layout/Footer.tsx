@@ -14,6 +14,7 @@ export default function Footer() {
           <Link href="/privacy-policy" className="text-[#FFD700] hover:text-[#bfa14a] transition-colors duration-200">Privacy Policy</Link>
           <Link href="/terms-and-conditions" className="text-[#FFD700] hover:text-[#bfa14a] transition-colors duration-200">Terms & Conditions</Link>
           <Link href="/cookie-policy" className="text-[#FFD700] hover:text-[#bfa14a] transition-colors duration-200">Cookie Policy</Link>
+          <Link href="/gdpr-policy" className="text-[#FFD700] hover:text-[#bfa14a] transition-colors duration-200">GDPR Policy</Link>
           <Link href="/accessibility" className="text-[#FFD700] hover:text-[#bfa14a] transition-colors duration-200">Accessibility</Link>
         </div>
       </div>

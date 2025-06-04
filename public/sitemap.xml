@@ -36,6 +36,12 @@
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
+  <url>
+    <loc>https://learning2trade.com/gdpr-policy</loc>
+    <lastmod>2024-03-20</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
   <!-- Future pages can be added here following the same structure -->
   <!-- Example structure for future pages:
   <url>
