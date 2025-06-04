@@ -140,7 +140,7 @@ export default function TermsAndConditions() {
           <section className="bg-white rounded-2xl shadow-xl p-8 border-t-4" style={{ borderTopColor: '#FFD700' }}>
             <h2 className="text-2xl sm:text-3xl font-bold mb-4 font-serif" style={{ color: '#bfa14a' }}>Contact Me</h2>
             <p className="text-lg leading-relaxed">
-              If you have any questions about these Terms and Conditions, please contact me through the website's contact form or email support.
+              If you have any questions about these Terms and Conditions, please contact me through the website&apos;s contact form or email support.
             </p>
           </section>
         </div>

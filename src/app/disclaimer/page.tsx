@@ -117,7 +117,7 @@ export default function Disclaimer() {
           <section>
             <h2 className="text-2xl sm:text-3xl font-bold mb-4 font-serif" style={{ color: '#bfa14a' }}>Contact Me</h2>
             <p className="text-lg leading-relaxed">
-              If you have any questions about this disclaimer, please contact me through the website's contact form or email support.
+              If you have any questions about this disclaimer, please contact me through the website&apos;s contact form or email support.
             </p>
           </section>
         </div>
