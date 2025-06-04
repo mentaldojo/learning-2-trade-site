@@ -10,7 +10,7 @@ export default function Home() {
       <section className="bg-black text-white py-16 sm:py-24 px-4 text-center relative overflow-hidden">
         {/* Geometric backdrop */}
         <div className="absolute inset-0 pointer-events-none z-0" aria-hidden="true">
-          <svg width="100%" height="100%" viewBox="0 0 100 100" className="w-full h-full" xmlns="http://www.w3.org/2000/svg" style={{ transform: 'translateX(25%)' }}>
+          <svg width="100%" height="100%" viewBox="0 0 100 100" className="w-full h-full" xmlns="http://www.w3.org/2000/svg">
             <defs>
               <linearGradient id="gold-gradient" x1="0" y1="0" x2="0" y2="1">
                 <stop offset="0%" stopColor="#fff9d1" />
@@ -18,30 +18,13 @@ export default function Home() {
                 <stop offset="70%" stopColor="#bfa14a" />
                 <stop offset="100%" stopColor="#fff9d1" />
               </linearGradient>
-              {/* Arrow marker definition */}
-              <marker
-                id="arrowhead"
-                markerWidth="6"
-                markerHeight="4"
-                refX="0"
-                refY="2"
-                orient="auto"
-              >
-                <polygon
-                  points="0 0, 6 2, 0 4"
-                  fill="url(#gold-gradient)"
-                  opacity="1"
-                />
-              </marker>
             </defs>
-            {/* Ascending diagonal lines with arrowheads */}
-            <line x1="0" y1="100" x2="30" y2="70" stroke="url(#gold-gradient)" strokeWidth="2" opacity="0.18" markerEnd="url(#arrowhead)" />
-            <line x1="20" y1="100" x2="50" y2="70" stroke="url(#gold-gradient)" strokeWidth="2" opacity="0.22" markerEnd="url(#arrowhead)" />
-            <line x1="40" y1="100" x2="70" y2="70" stroke="url(#gold-gradient)" strokeWidth="2" opacity="0.18" markerEnd="url(#arrowhead)" />
-            <line x1="60" y1="100" x2="90" y2="70" stroke="url(#gold-gradient)" strokeWidth="2" opacity="0.22" markerEnd="url(#arrowhead)" />
+            {/* X pattern */}
+            <line x1="20" y1="20" x2="80" y2="80" stroke="url(#gold-gradient)" strokeWidth="2" opacity="0.15" />
+            <line x1="80" y1="20" x2="20" y2="80" stroke="url(#gold-gradient)" strokeWidth="2" opacity="0.15" />
             {/* Horizontal accent lines */}
-            <line x1="0" y1="80" x2="100" y2="80" stroke="url(#gold-gradient)" strokeWidth="2" opacity="0.10" />
-            <line x1="0" y1="60" x2="100" y2="60" stroke="url(#gold-gradient)" strokeWidth="2" opacity="0.10" />
+            <line x1="0" y1="50" x2="100" y2="50" stroke="url(#gold-gradient)" strokeWidth="2" opacity="0.10" />
+            <line x1="50" y1="0" x2="50" y2="100" stroke="url(#gold-gradient)" strokeWidth="2" opacity="0.10" />
           </svg>
         </div>
         <h1 className="relative z-10 text-4xl sm:text-5xl md:text-6xl font-bold font-serif mb-6" style={{
@@ -59,7 +42,7 @@ export default function Home() {
           Professional Trading Success: PAT Indicator + Personal Mentorship<br className="hidden sm:block" />
           Learn How Institutional Traders Move Markets
         </p>
-        <p className="relative z-10 text-sm sm:text-base font-bold mb-6 sm:mb-8 font-light font-sans text-[#FFD700] px-4" style={{ fontFamily: 'Montserrat, sans-serif' }}>
+        <p className="relative z-10 text-sm sm:text-base font-bold mb-6 sm:mb-8 font-sans text-[#FFD700] px-4" style={{ fontFamily: 'Montserrat, sans-serif' }}>
           From Martin Cole – 35+ Years Professional Trading Experience
         </p>
         <button className="relative z-10 bg-[#FFD700] text-black font-bold px-6 sm:px-8 py-3 sm:py-4 shadow-lg text-base sm:text-lg transition-all duration-200 uppercase font-sans rounded-full hover:-translate-y-1 hover:shadow-[0_8px_32px_0_rgba(255,215,0,0.5)] focus:outline-none" style={{ fontFamily: 'Montserrat, sans-serif', transition: 'all 0.2s cubic-bezier(.4,0,.2,1)' }}>
