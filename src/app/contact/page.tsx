@@ -49,7 +49,7 @@ export default function ContactPage() {
             boxShadow: '0 10px 40px rgba(0,0,0,0.15), 0 0 0 1px rgba(255,215,0,0.1), 0 0 20px rgba(255,215,0,0.1)'
           }}>
             <Image
-              src="/images/people/Martin White Shirt 400.png"
+              src="/images/people/martin-white-shirt-400.png"
               alt="Martin Cole - Trading Mentor"
               fill
               sizes="(max-width: 640px) 224px, 320px"
