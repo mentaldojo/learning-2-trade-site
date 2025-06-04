@@ -267,7 +267,7 @@ export default function Home() {
           <div className="flex flex-wrap justify-center gap-x-6 gap-y-2">
             <a href="/disclaimer" className="text-[#FFD700] hover:text-[#bfa14a] transition-colors duration-200">Disclaimer Policy</a>
             <a href="/privacy-policy" className="text-[#FFD700] hover:text-[#bfa14a] transition-colors duration-200">Privacy Policy</a>
-            <a href="/terms" className="text-[#FFD700] hover:text-[#bfa14a] transition-colors duration-200">Terms & Conditions</a>
+            <a href="/terms-and-conditions" className="text-[#FFD700] hover:text-[#bfa14a] transition-colors duration-200">Terms & Conditions</a>
             <a href="/cookies" className="text-[#FFD700] hover:text-[#bfa14a] transition-colors duration-200">Cookie Policy</a>
             <a href="/accessibility" className="text-[#FFD700] hover:text-[#bfa14a] transition-colors duration-200">Accessibility</a>
           </div>

@@ -1,11 +1,11 @@
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Privacy Policy | Learning2Trade',
-  description: 'Privacy policy for Learning2Trade services, including data collection, usage, and protection practices.',
+  title: 'Cookie Policy | Learning2Trade',
+  description: 'Cookie policy for Learning2Trade services, explaining how we use cookies and similar technologies.',
 };
 
-export default function PrivacyPolicy() {
+export default function CookiePolicy() {
   return (
     <main className="min-h-screen bg-[#faf9f6] relative">
       {/* Paper texture overlay */}
@@ -48,7 +48,7 @@ export default function PrivacyPolicy() {
           backgroundClip: 'text',
           color: 'transparent',
         }}>
-          Privacy Policy
+          Cookie Policy
         </h1>
 
         <div className="space-y-8 text-gray-700">
@@ -56,87 +56,81 @@ export default function PrivacyPolicy() {
           <section>
             <h2 className="text-2xl sm:text-3xl font-bold mb-4 font-serif" style={{ color: '#bfa14a' }}>Introduction</h2>
             <p className="text-lg leading-relaxed">
-              This Privacy Policy explains how I collect, use, and protect your personal information when you use my services, including the PAT Indicator and Trading Mentorship program.
+              This Cookie Policy explains how I use cookies and similar technologies on my website. By using my services, you agree to the use of cookies as described in this policy.
             </p>
           </section>
 
-          {/* Information Collection */}
+          {/* What Are Cookies */}
           <section className="bg-white rounded-2xl shadow-xl p-8 border-t-4" style={{ borderTopColor: '#FFD700' }}>
-            <h2 className="text-2xl sm:text-3xl font-bold mb-4 font-serif" style={{ color: '#bfa14a' }}>Information Collection</h2>
+            <h2 className="text-2xl sm:text-3xl font-bold mb-4 font-serif" style={{ color: '#bfa14a' }}>What Are Cookies</h2>
             <div className="space-y-4">
               <p className="text-lg leading-relaxed">
-                I collect the following types of information:
+                Cookies are small text files that are stored on your device when you visit a website. They help me provide you with a better experience by:
               </p>
               <ul className="list-disc pl-6 space-y-2 text-lg">
-                <li>Name and contact information</li>
-                <li>TradingView account details for PAT Indicator access</li>
-                <li>Payment information (processed securely through Stripe)</li>
-                <li>Communication records and support interactions</li>
+                <li>Remembering your preferences</li>
+                <li>Understanding how you use my website</li>
+                <li>Improving my services</li>
+                <li>Providing personalized content</li>
               </ul>
             </div>
           </section>
 
-          {/* Information Usage */}
+          {/* Types of Cookies */}
           <section>
-            <h2 className="text-2xl sm:text-3xl font-bold mb-4 font-serif" style={{ color: '#bfa14a' }}>Information Usage</h2>
+            <h2 className="text-2xl sm:text-3xl font-bold mb-4 font-serif" style={{ color: '#bfa14a' }}>Types of Cookies</h2>
             <p className="text-lg leading-relaxed">
-              Your information is used to:
+              I use the following types of cookies:
             </p>
             <ul className="list-disc pl-6 space-y-2 text-lg mt-4">
-              <li>Provide access to the PAT Indicator and mentorship services</li>
-              <li>Process payments and maintain your account</li>
-              <li>Send important updates about your services</li>
-              <li>Respond to your questions and support requests</li>
+              <li>Essential cookies for website functionality</li>
+              <li>Analytics cookies to understand user behavior</li>
+              <li>Preference cookies to remember your settings</li>
+              <li>Security cookies to protect your account</li>
             </ul>
           </section>
 
-          {/* Data Protection */}
+          {/* Third-Party Cookies */}
           <section>
-            <h2 className="text-2xl sm:text-3xl font-bold mb-4 font-serif" style={{ color: '#bfa14a' }}>Data Protection</h2>
+            <h2 className="text-2xl sm:text-3xl font-bold mb-4 font-serif" style={{ color: '#bfa14a' }}>Third-Party Cookies</h2>
             <p className="text-lg leading-relaxed">
-              I implement appropriate security measures to protect your personal information. This includes:
+              Some cookies are placed by third-party services that appear on my pages:
             </p>
             <ul className="list-disc pl-6 space-y-2 text-lg mt-4">
-              <li>Secure data storage and transmission</li>
-              <li>Regular security assessments</li>
-              <li>Limited access to personal information</li>
-              <li>Secure payment processing through Stripe</li>
-            </ul>
-          </section>
-
-          {/* Third-Party Services */}
-          <section className="bg-white rounded-2xl shadow-xl p-8 border-t-4" style={{ borderTopColor: '#FFD700' }}>
-            <h2 className="text-2xl sm:text-3xl font-bold mb-4 font-serif" style={{ color: '#bfa14a' }}>Third-Party Services</h2>
-            <p className="text-lg leading-relaxed">
-              I use the following third-party services:
-            </p>
-            <ul className="list-disc pl-6 space-y-2 text-lg mt-4">
-              <li>TradingView for PAT Indicator delivery</li>
+              <li>Google Analytics for website analytics</li>
               <li>Stripe for payment processing</li>
-              <li>Email service providers for communications</li>
-              <li>Analytics tools to improve service quality</li>
+              <li>TradingView for PAT Indicator functionality</li>
+              <li>Social media platforms for sharing features</li>
             </ul>
           </section>
 
-          {/* Your Rights */}
-          <section>
-            <h2 className="text-2xl sm:text-3xl font-bold mb-4 font-serif" style={{ color: '#bfa14a' }}>Your Rights</h2>
+          {/* Managing Cookies */}
+          <section className="bg-white rounded-2xl shadow-xl p-8 border-t-4" style={{ borderTopColor: '#FFD700' }}>
+            <h2 className="text-2xl sm:text-3xl font-bold mb-4 font-serif" style={{ color: '#bfa14a' }}>Managing Cookies</h2>
             <p className="text-lg leading-relaxed">
-              You have the right to:
+              You can control and manage cookies in your browser settings. However, please note that:
             </p>
             <ul className="list-disc pl-6 space-y-2 text-lg mt-4">
-              <li>Access your personal information</li>
-              <li>Request corrections to your data</li>
-              <li>Request deletion of your data</li>
-              <li>Opt-out of marketing communications</li>
+              <li>Disabling cookies may affect website functionality</li>
+              <li>Some features may not work without cookies</li>
+              <li>You can delete cookies at any time</li>
+              <li>Browser settings can be adjusted to block cookies</li>
             </ul>
+          </section>
+
+          {/* Updates to Policy */}
+          <section>
+            <h2 className="text-2xl sm:text-3xl font-bold mb-4 font-serif" style={{ color: '#bfa14a' }}>Updates to Policy</h2>
+            <p className="text-lg leading-relaxed">
+              I may update this Cookie Policy from time to time. Any changes will be posted on this page with an updated revision date.
+            </p>
           </section>
 
           {/* Contact Information */}
           <section>
             <h2 className="text-2xl sm:text-3xl font-bold mb-4 font-serif" style={{ color: '#bfa14a' }}>Contact Me</h2>
             <p className="text-lg leading-relaxed">
-              If you have any questions about this Privacy Policy or your data, please contact me through the website's contact form or email support.
+              If you have any questions about this Cookie Policy, please contact me through the website's contact form or email support.
             </p>
           </section>
         </div>

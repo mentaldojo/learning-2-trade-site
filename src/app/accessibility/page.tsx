@@ -1,11 +1,11 @@
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Privacy Policy | Learning2Trade',
-  description: 'Privacy policy for Learning2Trade services, including data collection, usage, and protection practices.',
+  title: 'Accessibility | Learning2Trade',
+  description: 'Accessibility statement for Learning2Trade services, outlining our commitment to making our website accessible to all users.',
 };
 
-export default function PrivacyPolicy() {
+export default function Accessibility() {
   return (
     <main className="min-h-screen bg-[#faf9f6] relative">
       {/* Paper texture overlay */}
@@ -48,7 +48,7 @@ export default function PrivacyPolicy() {
           backgroundClip: 'text',
           color: 'transparent',
         }}>
-          Privacy Policy
+          Accessibility
         </h1>
 
         <div className="space-y-8 text-gray-700">
@@ -56,79 +56,80 @@ export default function PrivacyPolicy() {
           <section>
             <h2 className="text-2xl sm:text-3xl font-bold mb-4 font-serif" style={{ color: '#bfa14a' }}>Introduction</h2>
             <p className="text-lg leading-relaxed">
-              This Privacy Policy explains how I collect, use, and protect your personal information when you use my services, including the PAT Indicator and Trading Mentorship program.
+              I am committed to ensuring that my website is accessible to all users, regardless of their abilities or disabilities. This accessibility statement outlines my commitment to making my services available to everyone.
             </p>
           </section>
 
-          {/* Information Collection */}
+          {/* Standards Compliance */}
           <section className="bg-white rounded-2xl shadow-xl p-8 border-t-4" style={{ borderTopColor: '#FFD700' }}>
-            <h2 className="text-2xl sm:text-3xl font-bold mb-4 font-serif" style={{ color: '#bfa14a' }}>Information Collection</h2>
+            <h2 className="text-2xl sm:text-3xl font-bold mb-4 font-serif" style={{ color: '#bfa14a' }}>Standards Compliance</h2>
             <div className="space-y-4">
               <p className="text-lg leading-relaxed">
-                I collect the following types of information:
+                My website aims to comply with the following accessibility standards:
               </p>
               <ul className="list-disc pl-6 space-y-2 text-lg">
-                <li>Name and contact information</li>
-                <li>TradingView account details for PAT Indicator access</li>
-                <li>Payment information (processed securely through Stripe)</li>
-                <li>Communication records and support interactions</li>
+                <li>Web Content Accessibility Guidelines (WCAG) 2.1</li>
+                <li>Level AA compliance standards</li>
+                <li>ADA (Americans with Disabilities Act) requirements</li>
+                <li>EN 301 549 European accessibility standards</li>
               </ul>
             </div>
           </section>
 
-          {/* Information Usage */}
+          {/* Accessibility Features */}
           <section>
-            <h2 className="text-2xl sm:text-3xl font-bold mb-4 font-serif" style={{ color: '#bfa14a' }}>Information Usage</h2>
+            <h2 className="text-2xl sm:text-3xl font-bold mb-4 font-serif" style={{ color: '#bfa14a' }}>Accessibility Features</h2>
             <p className="text-lg leading-relaxed">
-              Your information is used to:
+              My website includes the following accessibility features:
             </p>
             <ul className="list-disc pl-6 space-y-2 text-lg mt-4">
-              <li>Provide access to the PAT Indicator and mentorship services</li>
-              <li>Process payments and maintain your account</li>
-              <li>Send important updates about your services</li>
-              <li>Respond to your questions and support requests</li>
+              <li>Keyboard navigation support</li>
+              <li>Screen reader compatibility</li>
+              <li>High contrast text options</li>
+              <li>Alt text for images</li>
+              <li>Responsive design for all devices</li>
             </ul>
           </section>
 
-          {/* Data Protection */}
+          {/* Ongoing Improvements */}
           <section>
-            <h2 className="text-2xl sm:text-3xl font-bold mb-4 font-serif" style={{ color: '#bfa14a' }}>Data Protection</h2>
+            <h2 className="text-2xl sm:text-3xl font-bold mb-4 font-serif" style={{ color: '#bfa14a' }}>Ongoing Improvements</h2>
             <p className="text-lg leading-relaxed">
-              I implement appropriate security measures to protect your personal information. This includes:
+              I continuously work to improve accessibility by:
             </p>
             <ul className="list-disc pl-6 space-y-2 text-lg mt-4">
-              <li>Secure data storage and transmission</li>
-              <li>Regular security assessments</li>
-              <li>Limited access to personal information</li>
-              <li>Secure payment processing through Stripe</li>
+              <li>Regular accessibility audits</li>
+              <li>User feedback implementation</li>
+              <li>Staff training on accessibility</li>
+              <li>Testing with assistive technologies</li>
             </ul>
           </section>
 
-          {/* Third-Party Services */}
+          {/* Known Limitations */}
           <section className="bg-white rounded-2xl shadow-xl p-8 border-t-4" style={{ borderTopColor: '#FFD700' }}>
-            <h2 className="text-2xl sm:text-3xl font-bold mb-4 font-serif" style={{ color: '#bfa14a' }}>Third-Party Services</h2>
+            <h2 className="text-2xl sm:text-3xl font-bold mb-4 font-serif" style={{ color: '#bfa14a' }}>Known Limitations</h2>
             <p className="text-lg leading-relaxed">
-              I use the following third-party services:
+              While I strive to ensure accessibility, some limitations may exist:
             </p>
             <ul className="list-disc pl-6 space-y-2 text-lg mt-4">
-              <li>TradingView for PAT Indicator delivery</li>
-              <li>Stripe for payment processing</li>
-              <li>Email service providers for communications</li>
-              <li>Analytics tools to improve service quality</li>
+              <li>Some third-party content may not be fully accessible</li>
+              <li>Older content may not meet current standards</li>
+              <li>Some complex trading charts may be difficult to navigate</li>
+              <li>Video content may require additional accessibility features</li>
             </ul>
           </section>
 
-          {/* Your Rights */}
+          {/* Feedback and Support */}
           <section>
-            <h2 className="text-2xl sm:text-3xl font-bold mb-4 font-serif" style={{ color: '#bfa14a' }}>Your Rights</h2>
+            <h2 className="text-2xl sm:text-3xl font-bold mb-4 font-serif" style={{ color: '#bfa14a' }}>Feedback and Support</h2>
             <p className="text-lg leading-relaxed">
-              You have the right to:
+              I welcome your feedback on accessibility. If you encounter any issues or have suggestions for improvement, please contact me through:
             </p>
             <ul className="list-disc pl-6 space-y-2 text-lg mt-4">
-              <li>Access your personal information</li>
-              <li>Request corrections to your data</li>
-              <li>Request deletion of your data</li>
-              <li>Opt-out of marketing communications</li>
+              <li>Website contact form</li>
+              <li>Email support</li>
+              <li>Phone support</li>
+              <li>Social media channels</li>
             </ul>
           </section>
 
@@ -136,7 +137,7 @@ export default function PrivacyPolicy() {
           <section>
             <h2 className="text-2xl sm:text-3xl font-bold mb-4 font-serif" style={{ color: '#bfa14a' }}>Contact Me</h2>
             <p className="text-lg leading-relaxed">
-              If you have any questions about this Privacy Policy or your data, please contact me through the website's contact form or email support.
+              If you have any questions about accessibility or need assistance, please contact me through the website's contact form or email support.
             </p>
           </section>
         </div>

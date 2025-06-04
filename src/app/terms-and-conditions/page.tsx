@@ -1,12 +1,11 @@
 import { Metadata } from 'next';
-import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'Disclaimer | Learning2Trade',
-  description: 'Important disclaimer information for Learning2Trade services, including trading risks and educational content.',
+  title: 'Terms and Conditions | Learning2Trade',
+  description: 'Terms and conditions for Learning2Trade services, including PAT Indicator and Trading Mentorship.',
 };
 
-export default function Disclaimer() {
+export default function TermsAndConditions() {
   return (
     <main className="min-h-screen bg-[#faf9f6] relative">
       {/* Paper texture overlay */}
@@ -49,7 +48,7 @@ export default function Disclaimer() {
           backgroundClip: 'text',
           color: 'transparent',
         }}>
-          Disclaimer
+          Terms and Conditions
         </h1>
 
         <div className="space-y-8 text-gray-700">
@@ -57,67 +56,91 @@ export default function Disclaimer() {
           <section>
             <h2 className="text-2xl sm:text-3xl font-bold mb-4 font-serif" style={{ color: '#bfa14a' }}>Introduction</h2>
             <p className="text-lg leading-relaxed">
-              This disclaimer outlines important information regarding the use of my trading services, including the PAT Indicator and Trading Mentorship program. Please read this carefully before using any of my services.
+              Welcome to Learning2Trade. These Terms and Conditions govern your use of my services, including the PAT Indicator and Trading Mentorship program. By accessing or using these services, you agree to be bound by these terms.
             </p>
           </section>
 
-          {/* Trading Risks */}
-          <section className="bg-white rounded-2xl shadow-xl p-8 border-t-4" style={{ borderTopColor: '#FFD700' }}>
-            <h2 className="text-2xl sm:text-3xl font-bold mb-4 font-serif" style={{ color: '#bfa14a' }}>Trading Risks</h2>
-            <div className="space-y-4">
-              <p className="text-lg leading-relaxed">
-                Trading in financial markets involves significant risk. You should be aware of the following risks:
-              </p>
-              <ul className="list-disc pl-6 space-y-2 text-lg">
-                <li>You can lose some or all of your invested capital</li>
-                <li>Past performance is not indicative of future results</li>
-                <li>Market conditions can change rapidly and unexpectedly</li>
-                <li>Trading decisions should be made based on your own research and risk tolerance</li>
-              </ul>
-            </div>
-          </section>
-
-          {/* Educational Content */}
+          {/* Acceptance of Terms */}
           <section>
-            <h2 className="text-2xl sm:text-3xl font-bold mb-4 font-serif" style={{ color: '#bfa14a' }}>Educational Content</h2>
+            <h2 className="text-2xl sm:text-3xl font-bold mb-4 font-serif" style={{ color: '#bfa14a' }}>Acceptance of Terms</h2>
             <p className="text-lg leading-relaxed">
-              The content provided through my services is for educational purposes only. It is not intended to be financial advice. You should:
+              By purchasing and using my services, you acknowledge that you have read, understood, and agree to be bound by these Terms and Conditions. If you do not agree to these terms, please do not use my services.
             </p>
-            <ul className="list-disc pl-6 space-y-2 text-lg mt-4">
-              <li>Conduct your own research before making trading decisions</li>
-              <li>Understand that no trading strategy guarantees profits</li>
-              <li>Consider your personal financial situation and risk tolerance</li>
-              <li>Consult with a financial advisor if needed</li>
+          </section>
+
+          {/* Purchase Terms */}
+          <section>
+            <h2 className="text-2xl sm:text-3xl font-bold mb-4 font-serif" style={{ color: '#bfa14a' }}>Purchase Terms</h2>
+            <p className="text-lg leading-relaxed mb-4">
+              My services include:
+            </p>
+            <ul className="list-disc pl-6 space-y-2 text-lg">
+              <li>The PAT Indicator, delivered via TradingView platform</li>
+              <li>Trading Mentorship program, delivered through my Learning and Training Portal</li>
             </ul>
           </section>
 
-          {/* No Guarantees */}
+          {/* Refund Policy */}
+          <section className="bg-white rounded-2xl shadow-xl p-8 border-t-4" style={{ borderTopColor: '#FFD700' }}>
+            <h2 className="text-2xl sm:text-3xl font-bold mb-4 font-serif" style={{ color: '#bfa14a' }}>Refund Policy</h2>
+            <div className="space-y-4">
+              <p className="text-lg leading-relaxed">
+                I offer a seven (7) day satisfaction guarantee for customers who purchase the PAT Indicator with Trading Mentorship package.
+              </p>
+              <div className="bg-[#fffbe6] p-6 rounded-xl">
+                <h3 className="text-xl font-bold mb-2" style={{ color: '#bfa14a' }}>Key Points:</h3>
+                <ul className="list-disc pl-6 space-y-2">
+                  <li>Full refund available within 7 days of purchase</li>
+                  <li>No questions asked during the refund period</li>
+                  <li>No refunds after the 7-day period due to setup costs and contractual obligations</li>
+                </ul>
+              </div>
+            </div>
+          </section>
+
+          {/* User Responsibilities */}
           <section>
-            <h2 className="text-2xl sm:text-3xl font-bold mb-4 font-serif" style={{ color: '#bfa14a' }}>No Guarantees</h2>
+            <h2 className="text-2xl sm:text-3xl font-bold mb-4 font-serif" style={{ color: '#bfa14a' }}>User Responsibilities</h2>
+            <p className="text-lg leading-relaxed mb-4">
+              As a user of my services, you agree to:
+            </p>
+            <ul className="list-disc pl-6 space-y-2 text-lg">
+              <li>Provide accurate and complete information during registration</li>
+              <li>Maintain the confidentiality of your account credentials</li>
+              <li>Use the services in compliance with all applicable laws and regulations</li>
+              <li>Not share or resell access to the PAT Indicator or mentorship materials</li>
+            </ul>
+          </section>
+
+          {/* Intellectual Property */}
+          <section>
+            <h2 className="text-2xl sm:text-3xl font-bold mb-4 font-serif" style={{ color: '#bfa14a' }}>Intellectual Property</h2>
             <p className="text-lg leading-relaxed">
-              I do not guarantee any specific results from using my services. Trading outcomes depend on various factors including market conditions, your trading decisions, and risk management practices.
+              All content, including the PAT Indicator, training materials, and mentorship resources, are protected by intellectual property rights. You are granted a limited, non-transferable license to use these materials for personal trading education only.
             </p>
           </section>
 
           {/* Limitation of Liability */}
-          <section className="bg-white rounded-2xl shadow-xl p-8 border-t-4" style={{ borderTopColor: '#FFD700' }}>
+          <section>
             <h2 className="text-2xl sm:text-3xl font-bold mb-4 font-serif" style={{ color: '#bfa14a' }}>Limitation of Liability</h2>
             <p className="text-lg leading-relaxed">
-              I am not liable for any losses or damages that may result from using my services. This includes but is not limited to:
+              My services are provided for educational purposes only. I do not guarantee trading results or profits. You are solely responsible for your trading decisions and outcomes.
             </p>
-            <ul className="list-disc pl-6 space-y-2 text-lg mt-4">
-              <li>Financial losses from trading</li>
-              <li>Missed trading opportunities</li>
-              <li>Technical issues or service interruptions</li>
-              <li>Decisions made based on the information provided</li>
-            </ul>
+          </section>
+
+          {/* Governing Law */}
+          <section>
+            <h2 className="text-2xl sm:text-3xl font-bold mb-4 font-serif" style={{ color: '#bfa14a' }}>Governing Law</h2>
+            <p className="text-lg leading-relaxed">
+              These Terms and Conditions are governed by and construed in accordance with the laws of New Zealand. Any disputes shall be subject to the exclusive jurisdiction of the courts of New Zealand.
+            </p>
           </section>
 
           {/* Contact Information */}
-          <section>
+          <section className="bg-white rounded-2xl shadow-xl p-8 border-t-4" style={{ borderTopColor: '#FFD700' }}>
             <h2 className="text-2xl sm:text-3xl font-bold mb-4 font-serif" style={{ color: '#bfa14a' }}>Contact Me</h2>
             <p className="text-lg leading-relaxed">
-              If you have any questions about this disclaimer, please contact me through the website's contact form or email support.
+              If you have any questions about these Terms and Conditions, please contact me through the website's contact form or email support.
             </p>
           </section>
         </div>
