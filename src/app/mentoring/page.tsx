@@ -120,7 +120,7 @@ export default function TraderMentoringPage() {
           color: 'transparent',
         }}>Ready to Experience Real Mentoring?</h2>
         <p className="text-lg text-gray-700 mb-8 max-w-2xl mx-auto">Get direct access to my expert guidance and the P.A.T. Indicator. Your journey to trading mastery starts here—one-on-one, with me by your side.</p>
-        <Link href="/signup" className="bg-[#FFD700] text-black font-bold px-10 py-5 rounded-full text-xl shadow-lg hover:-translate-y-1 hover:shadow-[0_8px_32px_0_rgba(255,215,0,0.5)] transition-all duration-200 uppercase">Start Your Mentoring Journey</Link>
+        <Link href="https://martincole.thrivecart.com/pat-indicator-for-trading-view/" className="bg-[#FFD700] text-black font-bold px-10 py-5 rounded-full text-xl shadow-lg hover:-translate-y-1 hover:shadow-[0_8px_32px_0_rgba(255,215,0,0.5)] transition-all duration-200 uppercase">Start Your Mentoring Journey</Link>
       </section>
     </main>
   );

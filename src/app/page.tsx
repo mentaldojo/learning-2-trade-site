@@ -63,7 +63,7 @@ export default function Home() {
           From Martin Cole – 35+ Years Professional Trading Experience
         </p>
         <button className="relative z-10 bg-[#FFD700] text-black font-bold px-6 sm:px-8 py-3 sm:py-4 shadow-lg text-base sm:text-lg transition-all duration-200 uppercase font-sans rounded-full hover:-translate-y-1 hover:shadow-[0_8px_32px_0_rgba(255,215,0,0.5)] focus:outline-none" style={{ fontFamily: 'Montserrat, sans-serif', transition: 'all 0.2s cubic-bezier(.4,0,.2,1)' }}>
-          START YOUR PROFESSIONAL TRADING JOURNEY
+          <a href="https://martincole.thrivecart.com/pat-indicator-for-trading-view/" className="block w-full h-full">START YOUR PROFESSIONAL TRADING JOURNEY</a>
         </button>
       </section>
 
@@ -219,7 +219,7 @@ export default function Home() {
             </div>
           </div>
           <button className="w-full bg-gradient-to-r from-[#ffe066] via-[#FFD700] to-[#bfa14a] text-black font-bold py-4 sm:py-5 shadow-lg text-lg sm:text-xl transition-all duration-200 uppercase font-sans rounded-full hover:-translate-y-1 hover:shadow-[0_8px_32px_0_rgba(255,215,0,0.5)] focus:outline-none" style={{ fontFamily: 'Montserrat, sans-serif', transition: 'all 0.2s cubic-bezier(.4,0,.2,1)' }}>
-            GET PAT INDICATOR + MENTORSHIP NOW
+            <a href="https://martincole.thrivecart.com/pat-indicator-for-trading-view/" className="block w-full h-full">GET PAT INDICATOR + MENTORSHIP NOW</a>
           </button>
         </div>
       </section>
@@ -252,27 +252,9 @@ export default function Home() {
           Get access to the original Market Makers Method and personal, one-on-one mentorship from its creator.
         </p>
         <button className="bg-[#FFD700] text-black font-bold px-6 sm:px-8 py-3 sm:py-4 shadow-lg text-base sm:text-lg transition-all duration-200 uppercase font-sans rounded-full hover:-translate-y-1 hover:shadow-[0_8px_32px_0_rgba(255,215,0,0.5)] focus:outline-none" style={{ fontFamily: 'Montserrat, sans-serif', transition: 'all 0.2s cubic-bezier(.4,0,.2,1)' }}>
-          Experience the power of<br className="hidden sm:block" />professional trader mentorship
+          <a href="https://martincole.thrivecart.com/pat-indicator-for-trading-view/" className="block w-full h-full">Experience the power of<br className="hidden sm:block" />professional trader mentorship</a>
         </button>
       </section>
-
-      {/* Footer */}
-      <footer className="bg-black text-gray-400 py-4 sm:py-6 text-xs border-t border-gray-800 font-light font-sans" style={{ fontFamily: 'Montserrat, sans-serif' }}>
-        <div className="max-w-7xl mx-auto px-4 flex flex-col sm:flex-row items-center justify-between">
-          <div className="text-left mb-4 sm:mb-0">
-            <div>© 2024 Martin Cole – Professional Trading Education</div>
-            <div className="mt-1">Not a licensed financial trading organization.</div>
-          </div>
-          
-          <div className="flex flex-wrap justify-center gap-x-6 gap-y-2">
-            <a href="/disclaimer" className="text-[#FFD700] hover:text-[#bfa14a] transition-colors duration-200">Disclaimer Policy</a>
-            <a href="/privacy-policy" className="text-[#FFD700] hover:text-[#bfa14a] transition-colors duration-200">Privacy Policy</a>
-            <a href="/terms-and-conditions" className="text-[#FFD700] hover:text-[#bfa14a] transition-colors duration-200">Terms & Conditions</a>
-            <a href="/cookies" className="text-[#FFD700] hover:text-[#bfa14a] transition-colors duration-200">Cookie Policy</a>
-            <a href="/accessibility" className="text-[#FFD700] hover:text-[#bfa14a] transition-colors duration-200">Accessibility</a>
-          </div>
-        </div>
-      </footer>
     </main>
   );
 } 
