@@ -5,7 +5,7 @@ const navLinks = [
   { href: '/pat-indicator', label: 'P.A.T. – Indicator' },
   { href: '/mentoring', label: 'Trader Mentoring' },
   { href: '/training', label: 'Training Portal' },
-  { href: '/blog', label: 'Blog' },
+  { href: 'https://blog.learningtotrade.com', label: 'Trading Videos' },
 ];
 
 export default function TopNav() {
