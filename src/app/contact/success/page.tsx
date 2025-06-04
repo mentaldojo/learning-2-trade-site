@@ -59,19 +59,19 @@ export default function ContactSuccess() {
                   <svg className="w-6 h-6 text-[#FFD700] mr-3 mt-1 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                   </svg>
-                  <span className="text-lg">I'll review your message within 24 hours</span>
+                  <span className="text-lg">I&apos;ll review your message within 24 hours</span>
                 </li>
                 <li className="flex items-start">
                   <svg className="w-6 h-6 text-[#FFD700] mr-3 mt-1 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                   </svg>
-                  <span className="text-lg">I'll send you a personalized response</span>
+                  <span className="text-lg">I&apos;ll send you a personalized response</span>
                 </li>
                 <li className="flex items-start">
                   <svg className="w-6 h-6 text-[#FFD700] mr-3 mt-1 flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                   </svg>
-                  <span className="text-lg">I'll follow up and reply to you directly</span>
+                  <span className="text-lg">I&apos;ll follow up and reply to you directly</span>
                 </li>
               </ul>
 
@@ -109,7 +109,7 @@ export default function ContactSuccess() {
               href="https://martincole.thrivecart.com/pat-indicator-for-trading-view/"
               className="inline-block bg-gradient-to-r from-[#ffe066] via-[#FFD700] to-[#bfa14a] text-black font-bold py-4 sm:py-5 px-8 sm:px-12 shadow-lg text-lg sm:text-xl transition-all duration-200 uppercase font-sans rounded-full hover:-translate-y-1 hover:shadow-[0_8px_32px_0_rgba(255,215,0,0.5)] focus:outline-none"
             >
-              Let's Make a Start
+              Let&apos;s Make a Start
             </Link>
           </section>
         </div>
