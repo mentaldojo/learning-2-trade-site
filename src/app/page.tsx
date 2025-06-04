@@ -51,20 +51,29 @@ export default function Home() {
       </section>
 
       {/* Problem Statement */}
-      <section className="bg-white text-black py-12 sm:py-16 px-4 text-center">
-        <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-8 sm:mb-12 text-gray-900 font-serif px-4" style={{ fontFamily: 'Georgia, Times New Roman, serif' }}>
+      <section className="bg-white text-black py-16 sm:py-24 px-4 text-center">
+        <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-12 sm:mb-16 text-gray-900 font-serif px-4" style={{ fontFamily: 'Georgia, Times New Roman, serif' }}>
           Struggling to Find Consistent Trading Success?
         </h2>
-        <div className="max-w-3xl mx-auto">
-          <p className="text-lg sm:text-xl mb-4 sm:mb-6 font-light text-gray-700 font-serif px-4" style={{ fontFamily: 'Georgia, Times New Roman, serif' }}>
-            Most retail traders fail because they&apos;re using outdated indicators that don&apos;t reflect how markets actually move.
-          </p>
-          <p className="text-lg sm:text-xl mb-4 sm:mb-6 font-light text-gray-700 font-serif px-4" style={{ fontFamily: 'Georgia, Times New Roman, serif' }}>
-            They&apos;re following strategies created by academics who&apos;ve never traded professionally.
-          </p>
-          <p className="text-lg sm:text-xl font-light text-gray-700 font-serif px-4" style={{ fontFamily: 'Georgia, Times New Roman, serif' }}>
-            That&apos;s why 97% of traders lose money – they&apos;re missing the institutional edge.
-          </p>
+        <div className="max-w-3xl mx-auto space-y-6">
+          <div className="flex items-start">
+            <span className="text-2xl mr-4 mt-1 font-bold" style={{ color: '#FFD700', textShadow: '0 2px 8px rgba(255,215,0,0.3)' }}>1.</span>
+            <p className="text-xl sm:text-2xl font-light text-gray-700 font-serif text-left leading-relaxed" style={{ fontFamily: 'Georgia, Times New Roman, serif' }}>
+              Most retail traders fail because they&apos;re using outdated indicators that don&apos;t reflect how and why markets actually move.
+            </p>
+          </div>
+          <div className="flex items-start">
+            <span className="text-2xl mr-4 mt-1 font-bold" style={{ color: '#FFD700', textShadow: '0 2px 8px rgba(255,215,0,0.3)' }}>2.</span>
+            <p className="text-xl sm:text-2xl font-light text-gray-700 font-serif text-left leading-relaxed" style={{ fontFamily: 'Georgia, Times New Roman, serif' }}>
+              Most retail traders are following strategies created by academics who&apos;ve never traded professionally, or keyboard &apos;gurus&apos; who have never traded in the real world.
+            </p>
+          </div>
+          <div className="flex items-start">
+            <span className="text-2xl mr-4 mt-1 font-bold" style={{ color: '#FFD700', textShadow: '0 2px 8px rgba(255,215,0,0.3)' }}>3.</span>
+            <p className="text-xl sm:text-2xl font-light text-gray-700 font-serif text-left leading-relaxed" style={{ fontFamily: 'Georgia, Times New Roman, serif' }}>
+              That&apos;s why 97% of traders lose money – they&apos;re missing the one single method that&apos;s hidden in plain sight!
+            </p>
+          </div>
         </div>
       </section>
 
