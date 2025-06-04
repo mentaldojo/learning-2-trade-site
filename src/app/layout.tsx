@@ -4,6 +4,9 @@ import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import TopNav from '../components/layout/TopNav'
 import Footer from '../components/layout/Footer'
+import KeyboardNavigation from '../components/accessibility/KeyboardNavigation'
+import ScreenReaderSupport from '../components/accessibility/ScreenReaderSupport'
+import HighContrastToggle from '../components/accessibility/HighContrastToggle'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -114,8 +117,13 @@ export default function RootLayout({
         />
       </head>
       <body className={inter.className}>
+        <KeyboardNavigation />
+        <ScreenReaderSupport />
+        <HighContrastToggle />
         <TopNav />
-        {children}
+        <main id="main-content" tabIndex={-1}>
+          {children}
+        </main>
         <Footer />
       </body>
     </html>
