@@ -1,8 +1,11 @@
 import Link from 'next/link';
+import { Montserrat } from 'next/font/google';
+
+const montserrat = Montserrat({ subsets: ['latin'], weight: ["400", "700", "800"], display: 'swap' });
 
 export default function Footer() {
   return (
-    <footer className="bg-black text-gray-400 py-4 sm:py-6 text-xs border-t border-gray-800 font-light font-sans" style={{ fontFamily: 'Montserrat, sans-serif' }}>
+    <footer className={`bg-black text-gray-400 py-4 sm:py-6 text-xs border-t border-gray-800 font-light font-sans ${montserrat.className}`}>
       <div className="max-w-7xl mx-auto px-4 flex flex-col sm:flex-row items-center justify-between">
         <div className="text-left mb-4 sm:mb-0">
           <div>© 2024 Martin Cole – Professional Trading Education</div>

@@ -1,7 +1,12 @@
-import React from 'react';
+import React, { Suspense } from 'react';
 import { motion } from 'framer-motion';
-import Testimonials from '../components/Testimonials';
-import FeatureCards from '../components/FeatureCards';
+import dynamic from 'next/dynamic';
+import { Montserrat } from 'next/font/google';
+
+const montserrat = Montserrat({ subsets: ['latin'], weight: ["400", "700", "800"], display: 'swap' });
+
+const FeatureCards = dynamic(() => import('../components/FeatureCards'), { suspense: true });
+const Testimonials = dynamic(() => import('../components/Testimonials'), { suspense: true });
 
 export default function Home() {
   return (
@@ -27,8 +32,7 @@ export default function Home() {
             <line x1="50" y1="0" x2="50" y2="100" stroke="url(#gold-gradient)" strokeWidth="2" opacity="0.10" />
           </svg>
         </div>
-        <h1 className="relative z-10 text-4xl sm:text-5xl md:text-6xl font-bold font-serif mb-6" style={{
-          fontFamily: 'Montserrat, sans-serif',
+        <h1 className={`relative z-10 text-4xl sm:text-5xl md:text-6xl font-bold font-serif mb-6 ${montserrat.className}`} style={{
           background: 'linear-gradient(to bottom, #fffbe6 0%, #ffe066 25%, #FFD700 50%, #bfa14a 75%, #fffbe6 100%)',
           WebkitBackgroundClip: 'text',
           WebkitTextFillColor: 'transparent',
@@ -38,14 +42,14 @@ export default function Home() {
         }}>
           Master Professional Trading with<br className="hidden sm:block" />The Market Makers Method
         </h1>
-        <p className="relative z-10 text-sm sm:text-base md:text-lg text-white mb-2 sm:mb-3 font-light font-sans px-4" style={{ fontFamily: 'Montserrat, sans-serif' }}>
+        <p className={`relative z-10 text-sm sm:text-base md:text-lg text-white mb-2 sm:mb-3 font-light font-sans px-4 ${montserrat.className}`}>
           Professional Trading Success: PAT Indicator + Personal Mentorship<br className="hidden sm:block" />
           Learn How Institutional Traders Move Markets
         </p>
-        <p className="relative z-10 text-sm sm:text-base font-bold mb-6 sm:mb-8 font-sans text-[#FFD700] px-4" style={{ fontFamily: 'Montserrat, sans-serif' }}>
+        <p className={`relative z-10 text-sm sm:text-base font-bold mb-6 sm:mb-8 font-sans text-[#FFD700] px-4 ${montserrat.className}`}>
           From Martin Cole – 35+ Years Professional Trading Experience
         </p>
-        <button className="relative z-10 bg-[#FFD700] text-black font-bold px-6 sm:px-8 py-3 sm:py-4 shadow-lg text-base sm:text-lg transition-all duration-200 uppercase font-sans rounded-full hover:-translate-y-1 hover:shadow-[0_8px_32px_0_rgba(255,215,0,0.5)] focus:outline-none" style={{ fontFamily: 'Montserrat, sans-serif', transition: 'all 0.2s cubic-bezier(.4,0,.2,1)' }}>
+        <button className={`relative z-10 bg-[#FFD700] text-black font-bold px-6 sm:px-8 py-3 sm:py-4 shadow-lg text-base sm:text-lg transition-all duration-200 uppercase font-sans rounded-full hover:-translate-y-1 hover:shadow-[0_8px_32px_0_rgba(255,215,0,0.5)] focus:outline-none ${montserrat.className}`} style={{ transition: 'all 0.2s cubic-bezier(.4,0,.2,1)' }}>
           <a href="https://martincole.thrivecart.com/pat-indicator-for-trading-view/" className="block w-full h-full">START YOUR PROFESSIONAL TRADING JOURNEY</a>
         </button>
       </section>
@@ -82,7 +86,9 @@ export default function Home() {
         <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-8 sm:mb-12 text-gray-900 font-serif px-4" style={{ fontFamily: 'Georgia, Times New Roman, serif' }}>
           Finally - An Indicator Based on How Markets Actually Work
         </h2>
-        <FeatureCards />
+        <Suspense fallback={<div>Loading features…</div>}>
+          <FeatureCards />
+        </Suspense>
       </section>
 
       {/* About/Origin Story */}
@@ -170,7 +176,9 @@ export default function Home() {
       </section>
 
       {/* Testimonials */}
-      <Testimonials />
+      <Suspense fallback={<div>Loading testimonials…</div>}>
+        <Testimonials />
+      </Suspense>
 
       {/* Pricing/Offer */}
       <section className="py-12 px-4" style={{ background: '#fcfbf7', color: '#111' }}>
@@ -210,7 +218,7 @@ export default function Home() {
               <div className="text-sm sm:text-base text-gray-700 font-light">Try PAT risk-free. If you&apos;re not completely satisfied, cancel anytime. No long-term commitment required.</div>
             </div>
           </div>
-          <button className="w-full bg-gradient-to-r from-[#ffe066] via-[#FFD700] to-[#bfa14a] text-black font-bold py-4 sm:py-5 shadow-lg text-lg sm:text-xl transition-all duration-200 uppercase font-sans rounded-full hover:-translate-y-1 hover:shadow-[0_8px_32px_0_rgba(255,215,0,0.5)] focus:outline-none" style={{ fontFamily: 'Montserrat, sans-serif', transition: 'all 0.2s cubic-bezier(.4,0,.2,1)' }}>
+          <button className="w-full bg-gradient-to-r from-[#ffe066] via-[#FFD700] to-[#bfa14a] text-black font-bold py-4 sm:py-5 shadow-lg text-lg sm:text-xl transition-all duration-200 uppercase font-sans rounded-full hover:-translate-y-1 hover:shadow-[0_8px_32px_0_rgba(255,215,0,0.5)] focus:outline-none" style={{ transition: 'all 0.2s cubic-bezier(.4,0,.2,1)' }}>
             <a href="https://martincole.thrivecart.com/pat-indicator-for-trading-view/" className="block w-full h-full">GET PAT INDICATOR + MENTORSHIP NOW</a>
           </button>
         </div>
@@ -243,7 +251,7 @@ export default function Home() {
         <p className="mb-6 font-light font-sans px-4" style={{ fontFamily: 'Montserrat, sans-serif' }}>
           Get access to the original Market Makers Method and personal, one-on-one mentorship from its creator.
         </p>
-        <button className="bg-[#FFD700] text-black font-bold px-6 sm:px-8 py-3 sm:py-4 shadow-lg text-base sm:text-lg transition-all duration-200 uppercase font-sans rounded-full hover:-translate-y-1 hover:shadow-[0_8px_32px_0_rgba(255,215,0,0.5)] focus:outline-none" style={{ fontFamily: 'Montserrat, sans-serif', transition: 'all 0.2s cubic-bezier(.4,0,.2,1)' }}>
+        <button className="bg-[#FFD700] text-black font-bold px-6 sm:px-8 py-3 sm:py-4 shadow-lg text-base sm:text-lg transition-all duration-200 uppercase font-sans rounded-full hover:-translate-y-1 hover:shadow-[0_8px_32px_0_rgba(255,215,0,0.5)] focus:outline-none" style={{ transition: 'all 0.2s cubic-bezier(.4,0,.2,1)' }}>
           <a href="https://martincole.thrivecart.com/pat-indicator-for-trading-view/" className="block w-full h-full">Experience the power of<br className="hidden sm:block" />professional trader mentorship</a>
         </button>
       </section>

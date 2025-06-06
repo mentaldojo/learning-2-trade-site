@@ -1,6 +1,9 @@
 "use client";
 import React from 'react';
 import { motion } from 'framer-motion';
+import { Montserrat } from 'next/font/google';
+
+const montserrat = Montserrat({ subsets: ['latin'], weight: ["400", "700", "800"], display: 'swap' });
 
 export default function FeatureCards() {
   return (
@@ -10,8 +13,8 @@ export default function FeatureCards() {
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, amount: 0.3 }}
         transition={{ duration: 0.7, ease: 'easeOut' }}
-        className="bg-white rounded-2xl shadow-xl flex-1 px-10 py-12 border-t-4"
-        style={{ borderTopColor: '#FFD700', fontFamily: 'Montserrat, sans-serif' }}
+        className={`bg-white rounded-2xl shadow-xl flex-1 px-10 py-12 border-t-4 ${montserrat.className}`}
+        style={{ borderTopColor: '#FFD700' }}
       >
         <h3 className="text-2xl font-bold mb-4 text-black font-sans">Professional Trading Method</h3>
         <p className="text-lg text-gray-700 font-light leading-relaxed font-sans">
@@ -23,8 +26,8 @@ export default function FeatureCards() {
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, amount: 0.3 }}
         transition={{ duration: 0.7, ease: 'easeOut' }}
-        className="bg-white rounded-2xl shadow-xl flex-1 px-10 py-12 border-t-4"
-        style={{ borderTopColor: '#FFD700', fontFamily: 'Montserrat, sans-serif' }}
+        className={`bg-white rounded-2xl shadow-xl flex-1 px-10 py-12 border-t-4 ${montserrat.className}`}
+        style={{ borderTopColor: '#FFD700' }}
       >
         <h3 className="text-2xl font-bold mb-4 text-black font-sans">Advanced Trading Indicator</h3>
         <p className="text-lg text-gray-700 font-light leading-relaxed font-sans">
@@ -36,8 +39,8 @@ export default function FeatureCards() {
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, amount: 0.3 }}
         transition={{ duration: 0.7, ease: 'easeOut' }}
-        className="bg-white rounded-2xl shadow-xl flex-1 px-10 py-12 border-t-4"
-        style={{ borderTopColor: '#FFD700', fontFamily: 'Montserrat, sans-serif' }}
+        className={`bg-white rounded-2xl shadow-xl flex-1 px-10 py-12 border-t-4 ${montserrat.className}`}
+        style={{ borderTopColor: '#FFD700' }}
       >
         <h3 className="text-2xl font-bold mb-4 text-black font-sans">Expert Trading Mentorship</h3>
         <p className="text-lg text-gray-700 font-light leading-relaxed font-sans">
