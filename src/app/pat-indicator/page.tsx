@@ -44,7 +44,7 @@ export default function PatSalesPage() {
           "@type": "Offer",
           "url": "https://www.learning2trade.com/pat-indicator",
           "priceCurrency": "USD",
-          "price": "REPLACE_WITH_PRICE",
+          "price": "97.00",
           "availability": "https://schema.org/InStock"
         }
       }) }} />

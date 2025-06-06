@@ -44,7 +44,7 @@ export default function TraderMentoringPage() {
           "@type": "Offer",
           "url": "https://www.learning2trade.com/mentoring",
           "priceCurrency": "USD",
-          "price": "REPLACE_WITH_PRICE",
+          "price": "97.00",
           "availability": "https://schema.org/InStock"
         }
       }) }} />
