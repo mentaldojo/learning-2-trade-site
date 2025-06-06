@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import { Metadata } from 'next';
+import Image from 'next/image';
 
 export const metadata: Metadata = {
   title: 'PAT Indicator & Mentoring | Learning2Trade',
@@ -107,7 +108,18 @@ export default function PatSalesPage() {
               <li>Easy integration with TradingView</li>
             </ul>
           </div>
-          <div className="h-40 bg-gradient-to-br from-[#ffe066] to-[#bfa14a] flex items-center justify-center rounded-xl text-white font-bold opacity-70">PAT Feature Visual</div>
+          <div className="flex items-center justify-center">
+            <Image
+              src="/images/charts/PAT-Page-Image-1.jpg"
+              alt="PAT Indicator for TradingView - feature screenshot, professional trading signals"
+              width={1200}
+              height={720}
+              sizes="(max-width: 640px) 100vw, (max-width: 1024px) 80vw, 50vw"
+              style={{ borderRadius: 12, objectFit: 'cover', width: '100%', height: 'auto' }}
+              priority
+              quality={85}
+            />
+          </div>
         </div>
       </section>
 
@@ -123,7 +135,18 @@ export default function PatSalesPage() {
               <li>All resources in one easy-access portal</li>
             </ul>
           </div>
-          <div className="h-40 bg-gradient-to-br from-[#ffe066] to-[#bfa14a] flex items-center justify-center rounded-xl text-white font-bold opacity-70">Mentoring Portal Visual</div>
+          <div className="flex items-center justify-center">
+            <Image
+              src="/images/charts/PAT-Page-Image-2.jpg"
+              alt="Trader Mentoring and Training Portal - Learning2Trade, professional trading mentorship"
+              width={1200}
+              height={720}
+              sizes="(max-width: 640px) 100vw, (max-width: 1024px) 80vw, 50vw"
+              style={{ borderRadius: 12, objectFit: 'cover', width: '100%', height: 'auto' }}
+              priority
+              quality={85}
+            />
+          </div>
         </div>
       </section>
 
