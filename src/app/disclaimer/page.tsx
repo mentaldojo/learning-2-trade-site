@@ -61,20 +61,14 @@ export default function Disclaimer() {
           </div>
         </div>
 
-        <h1 className="text-4xl sm:text-5xl font-bold mb-8 sm:mb-12 text-center font-serif" style={{
-          background: 'linear-gradient(to bottom, #fffbe6 0%, #ffe066 25%, #FFD700 50%, #bfa14a 75%, #fffbe6 100%)',
-          WebkitBackgroundClip: 'text',
-          WebkitTextFillColor: 'transparent',
-          backgroundClip: 'text',
-          color: 'transparent',
-        }}>
+        <h1 className="text-4xl sm:text-5xl font-bold mb-8 sm:mb-12 text-center">
           Disclaimer
         </h1>
 
         <div className="space-y-8 text-gray-700">
           {/* Introduction */}
           <section>
-            <h2 className="text-2xl sm:text-3xl font-bold mb-4 font-serif" style={{ color: '#bfa14a' }}>Introduction</h2>
+            <h2 className="text-2xl sm:text-3xl font-bold mb-4" style={{ color: '#bfa14a' }}>Introduction</h2>
             <p className="text-lg leading-relaxed">
               This disclaimer outlines important information regarding the use of my trading services, including the PAT Indicator and Trading Mentorship program. Please read this carefully before using any of my services.
             </p>
@@ -82,7 +76,7 @@ export default function Disclaimer() {
 
           {/* Trading Risks */}
           <section className="bg-white rounded-2xl shadow-xl p-8 border-t-4" style={{ borderTopColor: '#FFD700' }}>
-            <h2 className="text-2xl sm:text-3xl font-bold mb-4 font-serif" style={{ color: '#bfa14a' }}>Trading Risks</h2>
+            <h2 className="text-2xl sm:text-3xl font-bold mb-4" style={{ color: '#bfa14a' }}>Trading Risks</h2>
             <div className="space-y-4">
               <p className="text-lg leading-relaxed">
                 Trading in financial markets involves significant risk. You should be aware of the following risks:
@@ -98,7 +92,7 @@ export default function Disclaimer() {
 
           {/* Educational Content */}
           <section>
-            <h2 className="text-2xl sm:text-3xl font-bold mb-4 font-serif" style={{ color: '#bfa14a' }}>Educational Content</h2>
+            <h2 className="text-2xl sm:text-3xl font-bold mb-4" style={{ color: '#bfa14a' }}>Educational Content</h2>
             <p className="text-lg leading-relaxed">
               The content provided through my services is for educational purposes only. It is not intended to be financial advice. You should:
             </p>
@@ -112,7 +106,7 @@ export default function Disclaimer() {
 
           {/* No Guarantees */}
           <section>
-            <h2 className="text-2xl sm:text-3xl font-bold mb-4 font-serif" style={{ color: '#bfa14a' }}>No Guarantees</h2>
+            <h2 className="text-2xl sm:text-3xl font-bold mb-4" style={{ color: '#bfa14a' }}>No Guarantees</h2>
             <p className="text-lg leading-relaxed">
               I do not guarantee any specific results from using my services. Trading outcomes depend on various factors including market conditions, your trading decisions, and risk management practices.
             </p>
@@ -120,7 +114,7 @@ export default function Disclaimer() {
 
           {/* Limitation of Liability */}
           <section className="bg-white rounded-2xl shadow-xl p-8 border-t-4" style={{ borderTopColor: '#FFD700' }}>
-            <h2 className="text-2xl sm:text-3xl font-bold mb-4 font-serif" style={{ color: '#bfa14a' }}>Limitation of Liability</h2>
+            <h2 className="text-2xl sm:text-3xl font-bold mb-4" style={{ color: '#bfa14a' }}>Limitation of Liability</h2>
             <p className="text-lg leading-relaxed">
               I am not liable for any losses or damages that may result from using my services. This includes but is not limited to:
             </p>
@@ -134,7 +128,7 @@ export default function Disclaimer() {
 
           {/* Contact Information */}
           <section>
-            <h2 className="text-2xl sm:text-3xl font-bold mb-4 font-serif" style={{ color: '#bfa14a' }}>Contact Me</h2>
+            <h2 className="text-2xl sm:text-3xl font-bold mb-4" style={{ color: '#bfa14a' }}>Contact Me</h2>
             <p className="text-lg leading-relaxed">
               If you have any questions about this disclaimer, please contact me through the website&apos;s contact form or email support.
             </p>

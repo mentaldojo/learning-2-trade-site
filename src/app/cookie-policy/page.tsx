@@ -60,20 +60,14 @@ export default function CookiePolicy() {
           </div>
         </div>
 
-        <h1 className="text-4xl sm:text-5xl font-bold mb-8 sm:mb-12 text-center font-serif" style={{
-          background: 'linear-gradient(to bottom, #fffbe6 0%, #ffe066 25%, #FFD700 50%, #bfa14a 75%, #fffbe6 100%)',
-          WebkitBackgroundClip: 'text',
-          WebkitTextFillColor: 'transparent',
-          backgroundClip: 'text',
-          color: 'transparent',
-        }}>
+        <h1 className="text-4xl sm:text-5xl font-bold mb-8 sm:mb-12 text-center">
           Cookie Policy
         </h1>
 
         <div className="space-y-8 text-gray-700">
           {/* Introduction */}
           <section>
-            <h2 className="text-2xl sm:text-3xl font-bold mb-4 font-serif" style={{ color: '#bfa14a' }}>Introduction</h2>
+            <h2 className="text-2xl sm:text-3xl font-bold mb-4" style={{ color: '#bfa14a' }}>Introduction</h2>
             <p className="text-lg leading-relaxed">
               This Cookie Policy explains how I use cookies and similar technologies on my website. By using my services, you agree to the use of cookies as described in this policy.
             </p>
@@ -81,7 +75,7 @@ export default function CookiePolicy() {
 
           {/* What Are Cookies */}
           <section>
-            <h2 className="text-2xl sm:text-3xl font-bold mb-4 font-serif" style={{ color: '#bfa14a' }}>What Are Cookies</h2>
+            <h2 className="text-2xl sm:text-3xl font-bold mb-4" style={{ color: '#bfa14a' }}>What Are Cookies</h2>
             <div className="space-y-4">
               <p className="text-lg leading-relaxed">
                 Cookies are small text files that are stored on your device when you visit a website. They help me provide you with a better experience by:
@@ -97,7 +91,7 @@ export default function CookiePolicy() {
 
           {/* Types of Cookies */}
           <section>
-            <h2 className="text-2xl sm:text-3xl font-bold mb-4 font-serif" style={{ color: '#bfa14a' }}>Types of Cookies</h2>
+            <h2 className="text-2xl sm:text-3xl font-bold mb-4" style={{ color: '#bfa14a' }}>Types of Cookies</h2>
             <p className="text-lg leading-relaxed">
               I use the following types of cookies:
             </p>
@@ -111,7 +105,7 @@ export default function CookiePolicy() {
 
           {/* Third-Party Cookies */}
           <section>
-            <h2 className="text-2xl sm:text-3xl font-bold mb-4 font-serif" style={{ color: '#bfa14a' }}>Third-Party Cookies</h2>
+            <h2 className="text-2xl sm:text-3xl font-bold mb-4" style={{ color: '#bfa14a' }}>Third-Party Cookies</h2>
             <p className="text-lg leading-relaxed">
               Some cookies are placed by third-party services that appear on my pages:
             </p>
@@ -125,7 +119,7 @@ export default function CookiePolicy() {
 
           {/* Managing Cookies */}
           <section>
-            <h2 className="text-2xl sm:text-3xl font-bold mb-4 font-serif" style={{ color: '#bfa14a' }}>Managing Cookies</h2>
+            <h2 className="text-2xl sm:text-3xl font-bold mb-4" style={{ color: '#bfa14a' }}>Managing Cookies</h2>
             <p className="text-lg leading-relaxed">
               You can control and manage cookies in your browser settings. However, please note that:
             </p>
@@ -139,7 +133,7 @@ export default function CookiePolicy() {
 
           {/* Updates to Policy */}
           <section>
-            <h2 className="text-2xl sm:text-3xl font-bold mb-4 font-serif" style={{ color: '#bfa14a' }}>Updates to Policy</h2>
+            <h2 className="text-2xl sm:text-3xl font-bold mb-4" style={{ color: '#bfa14a' }}>Updates to Policy</h2>
             <p className="text-lg leading-relaxed">
               I may update this Cookie Policy from time to time. Any changes will be posted on this page with an updated revision date.
             </p>
@@ -147,7 +141,7 @@ export default function CookiePolicy() {
 
           {/* Contact Information */}
           <section>
-            <h2 className="text-2xl sm:text-3xl font-bold mb-4 font-serif" style={{ color: '#bfa14a' }}>Contact Me</h2>
+            <h2 className="text-2xl sm:text-3xl font-bold mb-4" style={{ color: '#bfa14a' }}>Contact Me</h2>
             <p className="text-lg leading-relaxed">
               If you have any questions about this Cookie Policy, please contact me through the website&apos;s contact form or email support.
             </p>

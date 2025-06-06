@@ -4,6 +4,25 @@ import Link from 'next/link';
 export const metadata: Metadata = {
   title: 'Message Sent | Learning2Trade',
   description: 'Thank you for contacting Learning2Trade. I will get back to you shortly.',
+  openGraph: {
+    title: 'Message Sent | Learning2Trade',
+    description: 'Thank you for contacting Learning2Trade. I will get back to you shortly.',
+    url: 'https://learning2trade.com/contact/success',
+    images: [
+      {
+        url: 'https://learning2trade.com/images/og-default.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'Message Sent - Learning2Trade'
+      }
+    ]
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Message Sent | Learning2Trade',
+    description: 'Thank you for contacting Learning2Trade. I will get back to you shortly.',
+    images: ['https://learning2trade.com/images/og-default.jpg']
+  }
 };
 
 export default function ContactSuccess() {
@@ -39,20 +58,14 @@ export default function ContactSuccess() {
           </div>
         </div>
 
-        <h1 className="text-4xl sm:text-5xl font-bold mb-8 sm:mb-12 text-center font-serif" style={{
-          background: 'linear-gradient(to bottom, #fffbe6 0%, #ffe066 25%, #FFD700 50%, #bfa14a 75%, #fffbe6 100%)',
-          WebkitBackgroundClip: 'text',
-          WebkitTextFillColor: 'transparent',
-          backgroundClip: 'text',
-          color: 'transparent',
-        }}>
+        <h1 className="text-4xl sm:text-5xl font-bold mb-8 sm:mb-12 text-center">
           Message Sent Successfully!
         </h1>
 
         <div className="space-y-12 text-gray-700">
           {/* Next Steps and Mentorship Benefits */}
           <section>
-            <h2 className="text-2xl sm:text-3xl font-bold mb-6 font-serif" style={{ color: '#bfa14a' }}>What Happens Next</h2>
+            <h2 className="text-2xl sm:text-3xl font-bold mb-6" style={{ color: '#bfa14a' }}>What Happens Next</h2>
             <div className="bg-white rounded-2xl shadow-xl p-8 border-t-4" style={{ borderTopColor: '#FFD700' }}>
               <ul className="space-y-4">
                 <li className="flex items-start">

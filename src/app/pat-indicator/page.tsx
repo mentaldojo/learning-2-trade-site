@@ -49,13 +49,7 @@ export default function PatSalesPage() {
             <line x1="50" y1="0" x2="50" y2="100" stroke="url(#gold-gradient)" strokeWidth="2" opacity="0.10" />
           </svg>
         </div>
-        <h1 className="relative z-10 text-4xl sm:text-5xl md:text-6xl font-bold font-serif mb-6" style={{
-          background: 'linear-gradient(to bottom, #fffbe6 0%, #ffe066 25%, #FFD700 50%, #bfa14a 75%, #fffbe6 100%)',
-          WebkitBackgroundClip: 'text',
-          WebkitTextFillColor: 'transparent',
-          backgroundClip: 'text',
-          color: 'transparent',
-        }}>
+        <h1 className="relative z-10 text-4xl sm:text-5xl md:text-6xl font-bold mb-6 bg-gradient-to-b from-[#FFD700] via-[#bfa14a] to-[#b8860b] bg-clip-text text-transparent drop-shadow">
           P.A.T. – Indicator for TradingView
         </h1>
         <p className="text-lg sm:text-xl text-[#FFD700] mb-8 max-w-2xl mx-auto font-light">
@@ -65,13 +59,7 @@ export default function PatSalesPage() {
 
       {/* Benefits Section */}
       <section className="max-w-4xl mx-auto px-4 py-12 sm:py-20">
-        <h2 className="text-3xl sm:text-4xl font-bold font-serif mb-8 text-center" style={{
-          background: 'linear-gradient(to bottom, #fffbe6 0%, #ffe066 25%, #FFD700 50%, #bfa14a 75%, #fffbe6 100%)',
-          WebkitBackgroundClip: 'text',
-          WebkitTextFillColor: 'transparent',
-          backgroundClip: 'text',
-          color: 'transparent',
-        }}>Why Choose PAT?</h2>
+        <h2 className="text-3xl sm:text-4xl font-bold mb-8 text-center bg-gradient-to-b from-[#FFD700] via-[#bfa14a] to-[#b8860b] bg-clip-text text-transparent drop-shadow">Why Choose PAT?</h2>
         <div className="max-w-2xl mx-auto text-left text-lg sm:text-xl text-gray-700 font-light space-y-6">
           <p>
             The PAT Indicator is designed for traders who want to stop guessing and start trading with confidence. Here&apos;s why it stands out from the crowd:
@@ -89,7 +77,7 @@ export default function PatSalesPage() {
 
       {/* How PAT Works */}
       <section className="max-w-4xl mx-auto px-4 py-12 sm:py-20">
-        <h2 className="text-2xl sm:text-3xl font-bold font-serif mb-8 text-center text-gray-900">How PAT Works</h2>
+        <h2 className="text-2xl sm:text-3xl font-bold mb-8 text-center text-gray-900 bg-gradient-to-b from-[#FFD700] via-[#bfa14a] to-[#b8860b] bg-clip-text text-transparent drop-shadow">How PAT Works</h2>
         <div className="grid sm:grid-cols-2 gap-8 items-center">
           <div>
             <ul className="list-disc pl-6 text-gray-700 space-y-3">
@@ -105,7 +93,7 @@ export default function PatSalesPage() {
 
       {/* Mentoring & Training Portal */}
       <section className="max-w-4xl mx-auto px-4 py-12 sm:py-20">
-        <h2 className="text-2xl sm:text-3xl font-bold font-serif mb-8 text-center text-gray-900">Mentoring & Training Portal</h2>
+        <h2 className="text-2xl sm:text-3xl font-bold mb-8 text-center text-gray-900 bg-gradient-to-b from-[#FFD700] via-[#bfa14a] to-[#b8860b] bg-clip-text text-transparent drop-shadow">Mentoring & Training Portal</h2>
         <div className="grid sm:grid-cols-2 gap-8 items-center">
           <div>
             <ul className="list-disc pl-6 text-gray-700 space-y-3">
@@ -121,16 +109,16 @@ export default function PatSalesPage() {
 
       {/* Testimonials */}
       <section className="max-w-4xl mx-auto px-4 py-12 sm:py-20">
-        <h2 className="text-2xl sm:text-3xl font-bold font-serif mb-8 text-center text-gray-900">What Our Users Say</h2>
+        <h2 className="text-2xl sm:text-3xl font-bold mb-8 text-center text-gray-900 bg-gradient-to-b from-[#FFD700] via-[#bfa14a] to-[#b8860b] bg-clip-text text-transparent drop-shadow">What Our Users Say</h2>
         <div className="grid sm:grid-cols-2 gap-8">
           <div className="relative bg-white rounded-3xl shadow-2xl p-8 text-center border-l-4" style={{ borderLeftColor: '#FFD700' }}>
             <span className="absolute left-8 top-6 text-4xl" style={{ color: '#FFD700' }}>&ldquo;</span>
-            <p className="italic text-lg font-light font-serif leading-relaxed mb-8">PAT changed my trading forever. I finally feel in control and confident in my decisions.</p>
+            <p className="italic text-lg font-light leading-relaxed mb-8">PAT changed my trading forever. I finally feel in control and confident in my decisions.</p>
             <div className="font-bold text-gray-900">— Satisfied Trader</div>
           </div>
           <div className="relative bg-white rounded-3xl shadow-2xl p-8 text-center border-l-4" style={{ borderLeftColor: '#FFD700' }}>
             <span className="absolute left-8 top-6 text-4xl" style={{ color: '#FFD700' }}>&ldquo;</span>
-            <p className="italic text-lg font-light font-serif leading-relaxed mb-8">The mentoring and training portal is worth its weight in gold. Highly recommended!</p>
+            <p className="italic text-lg font-light leading-relaxed mb-8">The mentoring and training portal is worth its weight in gold. Highly recommended!</p>
             <div className="font-bold text-gray-900">— New Consistent Trader</div>
           </div>
         </div>
@@ -138,7 +126,7 @@ export default function PatSalesPage() {
 
       {/* FAQ */}
       <section className="max-w-4xl mx-auto px-4 py-12 sm:py-20">
-        <h2 className="text-2xl sm:text-3xl font-bold font-serif mb-8 text-center text-gray-900">Frequently Asked Questions</h2>
+        <h2 className="text-2xl sm:text-3xl font-bold mb-8 text-center text-gray-900 bg-gradient-to-b from-[#FFD700] via-[#bfa14a] to-[#b8860b] bg-clip-text text-transparent drop-shadow">Frequently Asked Questions</h2>
         <div className="space-y-6">
           <div>
             <h3 className="font-bold text-lg text-gray-900 mb-2">Is PAT compatible with my TradingView account?</h3>
@@ -161,13 +149,7 @@ export default function PatSalesPage() {
 
       {/* Call to Action */}
       <section id="cta" className="max-w-4xl mx-auto px-4 py-16 sm:py-24 text-center">
-        <h2 className="text-3xl sm:text-4xl font-bold font-serif mb-6" style={{
-          background: 'linear-gradient(to bottom, #fffbe6 0%, #ffe066 25%, #FFD700 50%, #bfa14a 75%, #fffbe6 100%)',
-          WebkitBackgroundClip: 'text',
-          WebkitTextFillColor: 'transparent',
-          backgroundClip: 'text',
-          color: 'transparent',
-        }}>Ready to Trade with Confidence?</h2>
+        <h2 className="text-3xl sm:text-4xl font-bold mb-6 bg-gradient-to-b from-[#FFD700] via-[#bfa14a] to-[#b8860b] bg-clip-text text-transparent drop-shadow">Ready to Trade with Confidence?</h2>
         <p className="text-lg text-gray-700 mb-8">Get instant access to the PAT Indicator, personal one-on-one mentoring from me, and my full training portal.</p>
         <Link href="https://martincole.thrivecart.com/pat-indicator-for-trading-view/" className="bg-[#FFD700] text-black font-bold px-10 py-5 rounded-full text-xl shadow-lg hover:-translate-y-1 hover:shadow-[0_8px_32px_0_rgba(255,215,0,0.5)] transition-all duration-200 uppercase">Get PAT Now</Link>
       </section>

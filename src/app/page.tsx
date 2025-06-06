@@ -1,16 +1,23 @@
-import React, { Suspense } from 'react';
-import { motion } from 'framer-motion';
+import React from 'react';
 import dynamic from 'next/dynamic';
 import { Montserrat } from 'next/font/google';
 
 const montserrat = Montserrat({ subsets: ['latin'], weight: ["400", "700", "800"], display: 'swap' });
 
-const FeatureCards = dynamic(() => import('../components/FeatureCards'), { suspense: true });
-const Testimonials = dynamic(() => import('../components/Testimonials'), { suspense: true });
+// Dynamically import components with loading fallbacks
+const FeatureCards = dynamic(() => import('../components/FeatureCards'), {
+  loading: () => <div className="h-64 flex items-center justify-center">Loading features...</div>,
+  ssr: false
+});
+
+const Testimonials = dynamic(() => import('../components/Testimonials'), {
+  loading: () => <div className="h-64 flex items-center justify-center">Loading testimonials...</div>,
+  ssr: false
+});
 
 export default function Home() {
   return (
-    <main className="bg-black text-white font-sans">
+    <main className="bg-black text-white">
       {/* Hero Section */}
       <section className="bg-black text-white py-16 sm:py-24 px-4 text-center relative overflow-hidden">
         {/* Geometric backdrop */}
@@ -32,75 +39,63 @@ export default function Home() {
             <line x1="50" y1="0" x2="50" y2="100" stroke="url(#gold-gradient)" strokeWidth="2" opacity="0.10" />
           </svg>
         </div>
-        <h1 className={`relative z-10 text-4xl sm:text-5xl md:text-6xl font-bold font-serif mb-6 ${montserrat.className}`} style={{
-          background: 'linear-gradient(to bottom, #fffbe6 0%, #ffe066 25%, #FFD700 50%, #bfa14a 75%, #fffbe6 100%)',
-          WebkitBackgroundClip: 'text',
-          WebkitTextFillColor: 'transparent',
-          backgroundClip: 'text',
-          color: 'transparent',
-          textShadow: '0 1px 1px rgba(191,161,74,0.08)'
-        }}>
+        <h1 className="relative z-10 text-4xl sm:text-5xl md:text-6xl font-bold mb-6 bg-gradient-to-b from-[#FFD700] via-[#bfa14a] to-[#b8860b] bg-clip-text text-transparent drop-shadow">
           Master Professional Trading with<br className="hidden sm:block" />The Market Makers Method
         </h1>
-        <p className={`relative z-10 text-sm sm:text-base md:text-lg text-white mb-2 sm:mb-3 font-light font-sans px-4 ${montserrat.className}`}>
+        <p className="relative z-10 text-sm sm:text-base md:text-lg text-white mb-2 sm:mb-3 font-light px-4">
           Professional Trading Success: PAT Indicator + Personal Mentorship<br className="hidden sm:block" />
           Learn How Institutional Traders Move Markets
         </p>
-        <p className={`relative z-10 text-sm sm:text-base font-bold mb-6 sm:mb-8 font-sans text-[#FFD700] px-4 ${montserrat.className}`}>
+        <p className="relative z-10 text-sm sm:text-base font-bold mb-6 sm:mb-8 text-[#FFD700] px-4">
           From Martin Cole – 35+ Years Professional Trading Experience
         </p>
-        <button className={`relative z-10 bg-[#FFD700] text-black font-bold px-6 sm:px-8 py-3 sm:py-4 shadow-lg text-base sm:text-lg transition-all duration-200 uppercase font-sans rounded-full hover:-translate-y-1 hover:shadow-[0_8px_32px_0_rgba(255,215,0,0.5)] focus:outline-none ${montserrat.className}`} style={{ transition: 'all 0.2s cubic-bezier(.4,0,.2,1)' }}>
+        <button className="inline-block bg-[#FFD700] text-black font-bold py-3 px-8 text-lg sm:text-xl tracking-wider transition-all duration-200 uppercase rounded-full hover:-translate-y-1 hover:shadow-[0_8px_32px_0_rgba(255,215,0,0.5)] focus:outline-none" style={{ transition: 'all 0.2s cubic-bezier(.4,0,.2,1)' }}>
           <a href="https://martincole.thrivecart.com/pat-indicator-for-trading-view/" className="block w-full h-full">START YOUR PROFESSIONAL TRADING JOURNEY</a>
         </button>
       </section>
 
       {/* Problem Statement */}
       <section className="bg-white text-black py-16 sm:py-24 px-4 text-center">
-        <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-12 sm:mb-16 text-gray-900 font-serif px-4" style={{ fontFamily: 'Georgia, Times New Roman, serif' }}>
+        <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-12 sm:mb-16 px-4 bg-gradient-to-b from-[#FFD700] via-[#bfa14a] to-[#b8860b] bg-clip-text text-transparent drop-shadow">
           Struggling to Find Consistent Trading Success?
         </h2>
         <div className="max-w-3xl mx-auto space-y-6">
           <div className="flex items-start">
-            <span className="text-2xl mr-4 mt-1 font-bold" style={{ color: '#FFD700', textShadow: '0 2px 8px rgba(255,215,0,0.3)' }}>1.</span>
-            <p className="text-xl sm:text-2xl font-light text-gray-700 font-serif text-left leading-relaxed" style={{ fontFamily: 'Georgia, Times New Roman, serif' }}>
+            <span className="text-2xl mr-4 mt-1 font-bold" style={{ color: '#bfa14a', textShadow: '0 2px 8px rgba(191,161,74,0.3)' }}>1.</span>
+            <p className="text-xl sm:text-2xl font-light text-gray-700 text-left leading-relaxed">
               Most retail traders fail because they&apos;re using outdated indicators that don&apos;t reflect how and why markets actually move.
             </p>
           </div>
           <div className="flex items-start">
-            <span className="text-2xl mr-4 mt-1 font-bold" style={{ color: '#FFD700', textShadow: '0 2px 8px rgba(255,215,0,0.3)' }}>2.</span>
-            <p className="text-xl sm:text-2xl font-light text-gray-700 font-serif text-left leading-relaxed" style={{ fontFamily: 'Georgia, Times New Roman, serif' }}>
+            <span className="text-2xl mr-4 mt-1 font-bold" style={{ color: '#bfa14a', textShadow: '0 2px 8px rgba(191,161,74,0.3)' }}>2.</span>
+            <p className="text-xl sm:text-2xl font-light text-gray-700 text-left leading-relaxed">
               Most retail traders are following strategies created by academics who&apos;ve never traded professionally, or keyboard &apos;gurus&apos; who have never traded in the real world.
             </p>
           </div>
           <div className="flex items-start">
-            <span className="text-2xl mr-4 mt-1 font-bold" style={{ color: '#FFD700', textShadow: '0 2px 8px rgba(255,215,0,0.3)' }}>3.</span>
-            <p className="text-xl sm:text-2xl font-light text-gray-700 font-serif text-left leading-relaxed" style={{ fontFamily: 'Georgia, Times New Roman, serif' }}>
+            <span className="text-2xl mr-4 mt-1 font-bold" style={{ color: '#bfa14a', textShadow: '0 2px 8px rgba(191,161,74,0.3)' }}>3.</span>
+            <p className="text-xl sm:text-2xl font-light text-gray-700 text-left leading-relaxed">
               That&apos;s why 97% of traders lose money – they&apos;re missing the one single method that&apos;s hidden in plain sight!
             </p>
           </div>
         </div>
       </section>
 
-      {/* Feature Highlights */}
-      <section className="bg-[#faf9f6] py-12 sm:py-20 px-4 text-center">
-        <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-8 sm:mb-12 text-gray-900 font-serif px-4" style={{ fontFamily: 'Georgia, Times New Roman, serif' }}>
-          Finally - An Indicator Based on How Markets Actually Work
-        </h2>
-        <Suspense fallback={<div>Loading features…</div>}>
-          <FeatureCards />
-        </Suspense>
+      {/* Feature Cards Section */}
+      <section className="py-16 sm:py-24 px-4">
+        <FeatureCards />
       </section>
 
       {/* About/Origin Story */}
       <section className="bg-white text-black py-12 sm:py-24 px-4 text-center">
-        <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-8 sm:mb-12 text-gray-900 font-serif px-4" style={{ fontFamily: 'Georgia, Times New Roman, serif' }}>
+        <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-8 sm:mb-12 px-4 bg-gradient-to-b from-[#FFD700] via-[#bfa14a] to-[#b8860b] bg-clip-text text-transparent drop-shadow">
           The Market Makers Method - My Original Creation
         </h2>
         <div className="max-w-5xl mx-auto mb-8 sm:mb-14 mt-6 sm:mt-10">
-          <p className="text-lg sm:text-xl font-light font-serif italic text-gray-500 mb-4 sm:mb-6 px-4" style={{ fontFamily: 'Georgia, Times New Roman, serif' }}>
+          <p className="text-lg sm:text-xl font-light italic text-gray-500 mb-4 sm:mb-6 px-4">
             Early on in my 35+ years as a professional trader, I discovered something that changed everything...
           </p>
-          <p className="text-lg sm:text-xl font-light font-serif text-gray-700 leading-relaxed px-4" style={{ fontFamily: 'Georgia, Times New Roman, serif' }}>
+          <p className="text-lg sm:text-xl font-light text-gray-700 leading-relaxed px-4">
             Financial markets are not random.
             <br className="hidden sm:block" />
             They move with precision and follow patterns that institutional traders purposefully create. These created market movements are used to accumulate and distribute their massive positions.
@@ -119,16 +114,16 @@ export default function Home() {
             I Am The Original Creator of the Market Makers Method
           </h3>
           <div className="space-y-6 sm:space-y-10 w-full max-w-3xl mx-auto">
-            <p className="text-lg sm:text-xl font-normal font-serif leading-relaxed text-gray-200 px-4" style={{ fontFamily: 'Georgia, Times New Roman, serif' }}>
+            <p className="text-lg sm:text-xl font-normal leading-relaxed text-gray-200 px-4">
               What you see being taught by others today started with my research and real-world trading experience.
             </p>
-            <p className="text-lg sm:text-xl font-normal font-serif leading-relaxed text-gray-200 px-4" style={{ fontFamily: 'Georgia, Times New Roman, serif' }}>
+            <p className="text-lg sm:text-xl font-normal leading-relaxed text-gray-200 px-4">
               This isn&apos;t theory - it&apos;s a battle-tested trading method that has created successful traders.
             </p>
           </div>
         </div>
         <div className="max-w-3xl mx-auto">
-          <p className="text-lg sm:text-xl font-light font-serif text-gray-700 px-4" style={{ fontFamily: 'Georgia, Times New Roman, serif' }}>
+          <p className="text-lg sm:text-xl font-light text-gray-700 px-4">
             The PAT Indicator translates this method into clear, actionable signals on your TradingView charts.
           </p>
         </div>
@@ -136,18 +131,10 @@ export default function Home() {
 
       {/* Membership Benefits */}
       <section className="bg-black text-white py-12 px-4">
-        <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-8 sm:mb-12 font-serif text-center px-4" style={{
-          fontFamily: 'Georgia, Times New Roman, serif',
-          background: 'linear-gradient(to bottom, #fffbe6 0%, #ffe066 25%, #FFD700 50%, #bfa14a 75%, #fffbe6 100%)',
-          WebkitBackgroundClip: 'text',
-          WebkitTextFillColor: 'transparent',
-          backgroundClip: 'text',
-          color: 'transparent',
-          textShadow: '0 1px 1px rgba(191,161,74,0.08)'
-        }}>
+        <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-8 sm:mb-12 text-center px-4 bg-gradient-to-b from-[#FFD700] via-[#bfa14a] to-[#b8860b] bg-clip-text text-transparent drop-shadow">
           What You Get With PAT Membership
         </h2>
-        <ul className="max-w-3xl mx-auto text-left space-y-4 sm:space-y-6 text-lg sm:text-xl font-light font-serif px-4" style={{ fontFamily: 'Georgia, Times New Roman, serif' }}>
+        <ul className="max-w-3xl mx-auto text-left space-y-4 sm:space-y-6 text-lg sm:text-xl font-light px-4">
           <li className="flex items-start">
             <span className="text-2xl mr-4 mt-1" style={{ color: '#FFD700', textShadow: '0 2px 8px rgba(255,215,0,0.3)' }}>✔</span>
             PAT (Professional Activity Tracker) Indicator for TradingView
@@ -175,10 +162,8 @@ export default function Home() {
         </ul>
       </section>
 
-      {/* Testimonials */}
-      <Suspense fallback={<div>Loading testimonials…</div>}>
-        <Testimonials />
-      </Suspense>
+      {/* Testimonials Section */}
+      <Testimonials />
 
       {/* Pricing/Offer */}
       <section className="py-12 px-4" style={{ background: '#fcfbf7', color: '#111' }}>
@@ -195,14 +180,14 @@ export default function Home() {
           </span>
           <div className="flex-grow h-0.5 bg-gradient-to-l from-transparent via-[#FFD700] to-transparent" style={{ maxWidth: '180px' }} />
         </div>
-        <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-center mb-8 sm:mb-10 font-sans px-4" style={{ fontFamily: 'Montserrat, sans-serif' }}>
+        <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-center mb-8 sm:mb-10 px-4">
           Your Investment in Professional Trading Success
         </h2>
-        <div className="max-w-xl mx-auto bg-white rounded-2xl sm:rounded-3xl shadow-2xl p-8 sm:p-12 text-center font-sans border-4" style={{ borderColor: '#FFD700', boxShadow: '0 8px 32px 0 rgba(0,0,0,0.10)' }}>
-          <div className="text-4xl sm:text-6xl font-extrabold text-gray-900 mb-2 font-sans">$97</div>
-          <div className="text-base sm:text-lg text-gray-700 mb-4 sm:mb-6 font-light font-sans">per month</div>
-          <div className="text-xl sm:text-2xl font-bold mb-4 sm:mb-6 font-sans">PAT Indicator + Unlimited Mentorship</div>
-          <div className="text-sm sm:text-base text-gray-700 mb-6 sm:mb-8 font-light font-sans">
+        <div className="max-w-xl mx-auto bg-white rounded-2xl sm:rounded-3xl shadow-2xl p-8 sm:p-12 text-center border-4" style={{ borderColor: '#FFD700', boxShadow: '0 8px 32px 0 rgba(0,0,0,0.10)' }}>
+          <div className="text-4xl sm:text-6xl font-extrabold text-gray-900 mb-2">$97</div>
+          <div className="text-base sm:text-lg text-gray-700 mb-4 sm:mb-6 font-light">per month</div>
+          <div className="text-xl sm:text-2xl font-bold mb-4 sm:mb-6">PAT Indicator + Unlimited Mentorship</div>
+          <div className="text-sm sm:text-base text-gray-700 mb-6 sm:mb-8 font-light">
             Most professional trading mentorship costs $5,000+ per month. You get the same level of personal attention for a fraction of the cost.
           </div>
           <div className="relative bg-[#fcfbf7] border-2 border-[#FFD700] rounded-xl sm:rounded-2xl px-4 sm:px-6 py-4 sm:py-6 mb-8 sm:mb-10 flex flex-col items-center" style={{ minHeight: '100px' }}>
@@ -218,7 +203,7 @@ export default function Home() {
               <div className="text-sm sm:text-base text-gray-700 font-light">Try PAT risk-free. If you&apos;re not completely satisfied, cancel anytime. No long-term commitment required.</div>
             </div>
           </div>
-          <button className="w-full bg-gradient-to-r from-[#ffe066] via-[#FFD700] to-[#bfa14a] text-black font-bold py-4 sm:py-5 shadow-lg text-lg sm:text-xl transition-all duration-200 uppercase font-sans rounded-full hover:-translate-y-1 hover:shadow-[0_8px_32px_0_rgba(255,215,0,0.5)] focus:outline-none" style={{ transition: 'all 0.2s cubic-bezier(.4,0,.2,1)' }}>
+          <button className="inline-block bg-[#FFD700] text-black font-bold py-3 px-8 text-lg sm:text-xl tracking-wider transition-all duration-200 uppercase rounded-full hover:-translate-y-1 hover:shadow-[0_8px_32px_0_rgba(255,215,0,0.5)] focus:outline-none" style={{ transition: 'all 0.2s cubic-bezier(.4,0,.2,1)' }}>
             <a href="https://martincole.thrivecart.com/pat-indicator-for-trading-view/" className="block w-full h-full">GET PAT INDICATOR + MENTORSHIP NOW</a>
           </button>
         </div>
@@ -226,18 +211,10 @@ export default function Home() {
 
       {/* Urgency/Scarcity */}
       <section className="bg-black text-white py-8 sm:py-10 px-4 text-center">
-        <h3 className="text-lg sm:text-xl md:text-2xl font-bold mb-2 font-sans px-4" style={{
-          fontFamily: 'Montserrat, sans-serif',
-          background: 'linear-gradient(to bottom, #fffbe6 0%, #ffe066 25%, #FFD700 50%, #bfa14a 75%, #fffbe6 100%)',
-          WebkitBackgroundClip: 'text',
-          WebkitTextFillColor: 'transparent',
-          backgroundClip: 'text',
-          color: 'transparent',
-          textShadow: '0 1px 1px rgba(191,161,74,0.08)'
-        }}>
+        <h3 className="text-lg sm:text-xl md:text-2xl font-bold mb-2 font-sans px-4">
           Why Wait? Your Trading Account Is At Risk Every Day
         </h3>
-        <p className="max-w-2xl mx-auto text-sm sm:text-base text-gray-300 font-light font-sans px-4" style={{ fontFamily: 'Montserrat, sans-serif' }}>
+        <p className="max-w-2xl mx-auto text-sm sm:text-base text-gray-300 font-light px-4">
           Every day you trade without the proper method or indicator is another day your capital is unnecessarily at risk.<br className="hidden sm:block" />
           The market doesn&apos;t wait for you to figure it out. Get the edge you need today.
         </p>
@@ -245,13 +222,13 @@ export default function Home() {
 
       {/* Final CTA */}
       <section className="bg-white text-black py-8 sm:py-12 px-4 text-center">
-        <h3 className="text-lg sm:text-xl md:text-2xl font-bold mb-4 font-sans px-4" style={{ fontFamily: 'Montserrat, sans-serif' }}>
+        <h3 className="text-lg sm:text-xl md:text-2xl font-bold mb-4 font-sans px-4">
           Ready to Trade Like a Professional?
         </h3>
-        <p className="mb-6 font-light font-sans px-4" style={{ fontFamily: 'Montserrat, sans-serif' }}>
+        <p className="mb-6 font-light px-4">
           Get access to the original Market Makers Method and personal, one-on-one mentorship from its creator.
         </p>
-        <button className="bg-[#FFD700] text-black font-bold px-6 sm:px-8 py-3 sm:py-4 shadow-lg text-base sm:text-lg transition-all duration-200 uppercase font-sans rounded-full hover:-translate-y-1 hover:shadow-[0_8px_32px_0_rgba(255,215,0,0.5)] focus:outline-none" style={{ transition: 'all 0.2s cubic-bezier(.4,0,.2,1)' }}>
+        <button className="inline-block bg-[#FFD700] text-black font-bold py-3 px-8 text-lg sm:text-xl tracking-wider transition-all duration-200 uppercase rounded-full hover:-translate-y-1 hover:shadow-[0_8px_32px_0_rgba(255,215,0,0.5)] focus:outline-none" style={{ transition: 'all 0.2s cubic-bezier(.4,0,.2,1)' }}>
           <a href="https://martincole.thrivecart.com/pat-indicator-for-trading-view/" className="block w-full h-full">Experience the power of<br className="hidden sm:block" />professional trader mentorship</a>
         </button>
       </section>

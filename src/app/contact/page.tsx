@@ -51,13 +51,7 @@ export default function ContactPage() {
           </div>
         </div>
 
-        <h1 className="text-4xl sm:text-5xl font-bold mb-8 sm:mb-12 text-center font-serif" style={{
-          background: 'linear-gradient(to bottom, #fffbe6 0%, #ffe066 25%, #FFD700 50%, #bfa14a 75%, #fffbe6 100%)',
-          WebkitBackgroundClip: 'text',
-          WebkitTextFillColor: 'transparent',
-          backgroundClip: 'text',
-          color: 'transparent',
-        }}>
+        <h1 className="text-4xl sm:text-5xl font-bold mb-8 sm:mb-12 text-center">
           Contact Me
         </h1>
 
@@ -75,6 +69,8 @@ export default function ContactPage() {
               className="object-cover"
               style={{ objectPosition: '50% 40%' }}
               priority
+              quality={85}
+              loading="eager"
             />
           </div>
         </div>

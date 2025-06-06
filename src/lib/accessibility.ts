@@ -75,15 +75,13 @@ export const createFocusTrap = (element: HTMLElement) => {
 
 // ARIA live region announcements
 export const announceToScreenReader = (message: string, politeness: 'polite' | 'assertive' = 'polite') => {
-  const announcement = document.createElement('div');
-  announcement.setAttribute('aria-live', politeness);
-  announcement.setAttribute('aria-atomic', 'true');
-  announcement.setAttribute('class', 'sr-only');
-  announcement.textContent = message;
-  document.body.appendChild(announcement);
-  setTimeout(() => {
-    document.body.removeChild(announcement);
-  }, 1000);
+  const liveRegion = document.getElementById('announcements');
+  if (liveRegion) {
+    // Clear previous content
+    liveRegion.textContent = '';
+    // Set new content
+    liveRegion.textContent = message;
+  }
 };
 
 // High contrast mode

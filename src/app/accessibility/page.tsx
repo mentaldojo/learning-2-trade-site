@@ -33,14 +33,7 @@ export default function AccessibilityPage() {
           </svg>
         </div>
 
-        <h1 className="text-4xl sm:text-5xl font-bold text-center mb-12 font-serif" style={{
-          background: 'linear-gradient(to bottom, #fffbe6 0%, #ffe066 25%, #FFD700 50%, #bfa14a 75%, #fffbe6 100%)',
-          WebkitBackgroundClip: 'text',
-          WebkitTextFillColor: 'transparent',
-          backgroundClip: 'text',
-          color: 'transparent',
-          textShadow: '0 1px 1px rgba(191,161,74,0.08)'
-        }}>
+        <h1 className="text-4xl sm:text-5xl font-bold text-center mb-12">
           Accessibility Commitment
         </h1>
 

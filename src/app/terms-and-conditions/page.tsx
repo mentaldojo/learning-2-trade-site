@@ -60,20 +60,14 @@ export default function TermsAndConditions() {
           </div>
         </div>
 
-        <h1 className="text-4xl sm:text-5xl font-bold mb-8 sm:mb-12 text-center font-serif" style={{
-          background: 'linear-gradient(to bottom, #fffbe6 0%, #ffe066 25%, #FFD700 50%, #bfa14a 75%, #fffbe6 100%)',
-          WebkitBackgroundClip: 'text',
-          WebkitTextFillColor: 'transparent',
-          backgroundClip: 'text',
-          color: 'transparent',
-        }}>
+        <h1 className="text-4xl sm:text-5xl font-bold mb-8 sm:mb-12 text-center">
           Terms and Conditions
         </h1>
 
         <div className="space-y-8 text-gray-700">
           {/* Introduction */}
           <section>
-            <h2 className="text-2xl sm:text-3xl font-bold mb-4 font-serif" style={{ color: '#bfa14a' }}>Introduction</h2>
+            <h2 className="text-2xl sm:text-3xl font-bold mb-4" style={{ color: '#bfa14a' }}>Introduction</h2>
             <p className="text-lg leading-relaxed">
               Welcome to Learning2Trade. These Terms and Conditions govern your use of my services, including the PAT Indicator and Trading Mentorship program. By accessing or using these services, you agree to be bound by these terms.
             </p>
@@ -81,7 +75,7 @@ export default function TermsAndConditions() {
 
           {/* Acceptance of Terms */}
           <section>
-            <h2 className="text-2xl sm:text-3xl font-bold mb-4 font-serif" style={{ color: '#bfa14a' }}>Acceptance of Terms</h2>
+            <h2 className="text-2xl sm:text-3xl font-bold mb-4" style={{ color: '#bfa14a' }}>Acceptance of Terms</h2>
             <p className="text-lg leading-relaxed">
               By purchasing and using my services, you acknowledge that you have read, understood, and agree to be bound by these Terms and Conditions. If you do not agree to these terms, please do not use my services.
             </p>
@@ -89,7 +83,7 @@ export default function TermsAndConditions() {
 
           {/* Purchase Terms */}
           <section>
-            <h2 className="text-2xl sm:text-3xl font-bold mb-4 font-serif" style={{ color: '#bfa14a' }}>Purchase Terms</h2>
+            <h2 className="text-2xl sm:text-3xl font-bold mb-4" style={{ color: '#bfa14a' }}>Purchase Terms</h2>
             <p className="text-lg leading-relaxed mb-4">
               My services include:
             </p>
@@ -101,7 +95,7 @@ export default function TermsAndConditions() {
 
           {/* Refund Policy */}
           <section className="bg-white rounded-2xl shadow-xl p-8 border-t-4" style={{ borderTopColor: '#FFD700' }}>
-            <h2 className="text-2xl sm:text-3xl font-bold mb-4 font-serif" style={{ color: '#bfa14a' }}>Refund Policy</h2>
+            <h2 className="text-2xl sm:text-3xl font-bold mb-4" style={{ color: '#bfa14a' }}>Refund Policy</h2>
             <div className="space-y-4">
               <p className="text-lg leading-relaxed">
                 I offer a seven (7) day satisfaction guarantee for customers who purchase the PAT Indicator with Trading Mentorship package.
@@ -119,7 +113,7 @@ export default function TermsAndConditions() {
 
           {/* User Responsibilities */}
           <section>
-            <h2 className="text-2xl sm:text-3xl font-bold mb-4 font-serif" style={{ color: '#bfa14a' }}>User Responsibilities</h2>
+            <h2 className="text-2xl sm:text-3xl font-bold mb-4" style={{ color: '#bfa14a' }}>User Responsibilities</h2>
             <p className="text-lg leading-relaxed mb-4">
               As a user of my services, you agree to:
             </p>
@@ -133,7 +127,7 @@ export default function TermsAndConditions() {
 
           {/* Intellectual Property */}
           <section>
-            <h2 className="text-2xl sm:text-3xl font-bold mb-4 font-serif" style={{ color: '#bfa14a' }}>Intellectual Property</h2>
+            <h2 className="text-2xl sm:text-3xl font-bold mb-4" style={{ color: '#bfa14a' }}>Intellectual Property</h2>
             <p className="text-lg leading-relaxed">
               All content, including the PAT Indicator, training materials, and mentorship resources, are protected by intellectual property rights. You are granted a limited, non-transferable license to use these materials for personal trading education only.
             </p>
@@ -141,7 +135,7 @@ export default function TermsAndConditions() {
 
           {/* Limitation of Liability */}
           <section>
-            <h2 className="text-2xl sm:text-3xl font-bold mb-4 font-serif" style={{ color: '#bfa14a' }}>Limitation of Liability</h2>
+            <h2 className="text-2xl sm:text-3xl font-bold mb-4" style={{ color: '#bfa14a' }}>Limitation of Liability</h2>
             <p className="text-lg leading-relaxed">
               My services are provided for educational purposes only. I do not guarantee trading results or profits. You are solely responsible for your trading decisions and outcomes.
             </p>
@@ -149,7 +143,7 @@ export default function TermsAndConditions() {
 
           {/* Governing Law */}
           <section>
-            <h2 className="text-2xl sm:text-3xl font-bold mb-4 font-serif" style={{ color: '#bfa14a' }}>Governing Law</h2>
+            <h2 className="text-2xl sm:text-3xl font-bold mb-4" style={{ color: '#bfa14a' }}>Governing Law</h2>
             <p className="text-lg leading-relaxed">
               These Terms and Conditions are governed by and construed in accordance with the laws of New Zealand. Any disputes shall be subject to the exclusive jurisdiction of the courts of New Zealand.
             </p>
@@ -157,7 +151,7 @@ export default function TermsAndConditions() {
 
           {/* Contact Information */}
           <section className="bg-white rounded-2xl shadow-xl p-8 border-t-4" style={{ borderTopColor: '#FFD700' }}>
-            <h2 className="text-2xl sm:text-3xl font-bold mb-4 font-serif" style={{ color: '#bfa14a' }}>Contact Me</h2>
+            <h2 className="text-2xl sm:text-3xl font-bold mb-4" style={{ color: '#bfa14a' }}>Contact Me</h2>
             <p className="text-lg leading-relaxed">
               If you have any questions about these Terms and Conditions, please contact me through the website&apos;s contact form or email support.
             </p>

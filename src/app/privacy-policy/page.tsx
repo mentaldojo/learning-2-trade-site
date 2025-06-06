@@ -60,20 +60,14 @@ export default function PrivacyPolicy() {
           </div>
         </div>
 
-        <h1 className="text-4xl sm:text-5xl font-bold mb-8 sm:mb-12 text-center font-serif" style={{
-          background: 'linear-gradient(to bottom, #fffbe6 0%, #ffe066 25%, #FFD700 50%, #bfa14a 75%, #fffbe6 100%)',
-          WebkitBackgroundClip: 'text',
-          WebkitTextFillColor: 'transparent',
-          backgroundClip: 'text',
-          color: 'transparent',
-        }}>
+        <h1 className="text-4xl sm:text-5xl font-bold mb-8 sm:mb-12 text-center">
           Privacy Policy
         </h1>
 
         <div className="space-y-8 text-gray-700">
           {/* Introduction */}
           <section>
-            <h2 className="text-2xl sm:text-3xl font-bold mb-4 font-serif" style={{ color: '#bfa14a' }}>Introduction</h2>
+            <h2 className="text-2xl sm:text-3xl font-bold mb-4" style={{ color: '#bfa14a' }}>Introduction</h2>
             <p className="text-lg leading-relaxed">
               This Privacy Policy explains how I collect, use, and protect your personal information when you use my services, including the PAT Indicator and Trading Mentorship program.
             </p>
@@ -81,7 +75,7 @@ export default function PrivacyPolicy() {
 
           {/* Information Collection */}
           <section className="bg-white rounded-2xl shadow-xl p-8 border-t-4" style={{ borderTopColor: '#FFD700' }}>
-            <h2 className="text-2xl sm:text-3xl font-bold mb-4 font-serif" style={{ color: '#bfa14a' }}>Information Collection</h2>
+            <h2 className="text-2xl sm:text-3xl font-bold mb-4" style={{ color: '#bfa14a' }}>Information Collection</h2>
             <div className="space-y-4">
               <p className="text-lg leading-relaxed">
                 I collect the following types of information:
@@ -97,7 +91,7 @@ export default function PrivacyPolicy() {
 
           {/* Information Usage */}
           <section>
-            <h2 className="text-2xl sm:text-3xl font-bold mb-4 font-serif" style={{ color: '#bfa14a' }}>Information Usage</h2>
+            <h2 className="text-2xl sm:text-3xl font-bold mb-4" style={{ color: '#bfa14a' }}>Information Usage</h2>
             <p className="text-lg leading-relaxed">
               Your information is used to:
             </p>
@@ -111,7 +105,7 @@ export default function PrivacyPolicy() {
 
           {/* Data Protection */}
           <section>
-            <h2 className="text-2xl sm:text-3xl font-bold mb-4 font-serif" style={{ color: '#bfa14a' }}>Data Protection</h2>
+            <h2 className="text-2xl sm:text-3xl font-bold mb-4" style={{ color: '#bfa14a' }}>Data Protection</h2>
             <p className="text-lg leading-relaxed">
               I implement appropriate security measures to protect your personal information. This includes:
             </p>
@@ -125,7 +119,7 @@ export default function PrivacyPolicy() {
 
           {/* Third-Party Services */}
           <section className="bg-white rounded-2xl shadow-xl p-8 border-t-4" style={{ borderTopColor: '#FFD700' }}>
-            <h2 className="text-2xl sm:text-3xl font-bold mb-4 font-serif" style={{ color: '#bfa14a' }}>Third-Party Services</h2>
+            <h2 className="text-2xl sm:text-3xl font-bold mb-4" style={{ color: '#bfa14a' }}>Third-Party Services</h2>
             <p className="text-lg leading-relaxed">
               I use the following third-party services:
             </p>
@@ -139,7 +133,7 @@ export default function PrivacyPolicy() {
 
           {/* Your Rights */}
           <section>
-            <h2 className="text-2xl sm:text-3xl font-bold mb-4 font-serif" style={{ color: '#bfa14a' }}>Your Rights</h2>
+            <h2 className="text-2xl sm:text-3xl font-bold mb-4" style={{ color: '#bfa14a' }}>Your Rights</h2>
             <p className="text-lg leading-relaxed">
               You have the right to:
             </p>
@@ -153,7 +147,7 @@ export default function PrivacyPolicy() {
 
           {/* Contact Information */}
           <section>
-            <h2 className="text-2xl sm:text-3xl font-bold mb-4 font-serif" style={{ color: '#bfa14a' }}>Contact Me</h2>
+            <h2 className="text-2xl sm:text-3xl font-bold mb-4" style={{ color: '#bfa14a' }}>Contact Me</h2>
             <p className="text-lg leading-relaxed">
               If you have any questions about this Privacy Policy or your data, please contact me through the website&apos;s contact form or email support.
             </p>

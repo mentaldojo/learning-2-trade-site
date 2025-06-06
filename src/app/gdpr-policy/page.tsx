@@ -60,20 +60,14 @@ export default function GDPRPolicyPage() {
           </div>
         </div>
 
-        <h1 className="text-4xl sm:text-5xl font-bold mb-8 sm:mb-12 text-center font-serif" style={{
-          background: 'linear-gradient(to bottom, #fffbe6 0%, #ffe066 25%, #FFD700 50%, #bfa14a 75%, #fffbe6 100%)',
-          WebkitBackgroundClip: 'text',
-          WebkitTextFillColor: 'transparent',
-          backgroundClip: 'text',
-          color: 'transparent',
-        }}>
+        <h1 className="text-4xl sm:text-5xl font-bold mb-8 sm:mb-12 text-center">
           GDPR Policy
         </h1>
 
         <div className="space-y-8 text-gray-700">
           {/* Introduction */}
           <section>
-            <h2 className="text-2xl sm:text-3xl font-bold mb-4 font-serif" style={{ color: '#bfa14a' }}>Introduction</h2>
+            <h2 className="text-2xl sm:text-3xl font-bold mb-4" style={{ color: '#bfa14a' }}>Introduction</h2>
             <p className="text-lg leading-relaxed">
               This GDPR Policy outlines how Learning2Trade collects, uses, and protects your personal data in compliance with the General Data Protection Regulation (GDPR). We are committed to ensuring that your privacy is protected and that your personal data is processed in accordance with applicable data protection laws.
             </p>
@@ -81,7 +75,7 @@ export default function GDPRPolicyPage() {
 
           {/* Your Rights */}
           <section>
-            <h2 className="text-2xl sm:text-3xl font-bold mb-4 font-serif" style={{ color: '#bfa14a' }}>Your Rights</h2>
+            <h2 className="text-2xl sm:text-3xl font-bold mb-4" style={{ color: '#bfa14a' }}>Your Rights</h2>
             <p className="text-lg leading-relaxed mb-4">
               Under GDPR, you have the following rights regarding your personal data:
             </p>
@@ -98,7 +92,7 @@ export default function GDPRPolicyPage() {
 
           {/* Data Collection */}
           <section>
-            <h2 className="text-2xl sm:text-3xl font-bold mb-4 font-serif" style={{ color: '#bfa14a' }}>Data We Collect</h2>
+            <h2 className="text-2xl sm:text-3xl font-bold mb-4" style={{ color: '#bfa14a' }}>Data We Collect</h2>
             <p className="text-lg leading-relaxed mb-4">
               We collect and process the following types of personal data:
             </p>
@@ -113,7 +107,7 @@ export default function GDPRPolicyPage() {
 
           {/* Data Usage */}
           <section>
-            <h2 className="text-2xl sm:text-3xl font-bold mb-4 font-serif" style={{ color: '#bfa14a' }}>How We Use Your Data</h2>
+            <h2 className="text-2xl sm:text-3xl font-bold mb-4" style={{ color: '#bfa14a' }}>How We Use Your Data</h2>
             <p className="text-lg leading-relaxed mb-4">
               We use your personal data for the following purposes:
             </p>
@@ -128,7 +122,7 @@ export default function GDPRPolicyPage() {
 
           {/* Data Security */}
           <section className="bg-white rounded-2xl shadow-xl p-8 border-t-4" style={{ borderTopColor: '#FFD700' }}>
-            <h2 className="text-2xl sm:text-3xl font-bold mb-4 font-serif" style={{ color: '#bfa14a' }}>Data Security</h2>
+            <h2 className="text-2xl sm:text-3xl font-bold mb-4" style={{ color: '#bfa14a' }}>Data Security</h2>
             <p className="text-lg leading-relaxed">
               We implement appropriate technical and organizational measures to protect your personal data against unauthorized access, alteration, disclosure, or destruction. This includes:
             </p>
@@ -142,7 +136,7 @@ export default function GDPRPolicyPage() {
 
           {/* Data Retention */}
           <section>
-            <h2 className="text-2xl sm:text-3xl font-bold mb-4 font-serif" style={{ color: '#bfa14a' }}>Data Retention</h2>
+            <h2 className="text-2xl sm:text-3xl font-bold mb-4" style={{ color: '#bfa14a' }}>Data Retention</h2>
             <p className="text-lg leading-relaxed">
               We retain your personal data only for as long as necessary to fulfill the purposes for which it was collected, including legal, accounting, or reporting requirements. When we no longer need your data, we will securely delete or anonymize it.
             </p>
@@ -150,7 +144,7 @@ export default function GDPRPolicyPage() {
 
           {/* Contact Information */}
           <section className="bg-white rounded-2xl shadow-xl p-8 border-t-4" style={{ borderTopColor: '#FFD700' }}>
-            <h2 className="text-2xl sm:text-3xl font-bold mb-4 font-serif" style={{ color: '#bfa14a' }}>Contact Us</h2>
+            <h2 className="text-2xl sm:text-3xl font-bold mb-4" style={{ color: '#bfa14a' }}>Contact Us</h2>
             <p className="text-lg leading-relaxed">
               If you have any questions about this GDPR Policy or wish to exercise your rights, please contact us at:
             </p>

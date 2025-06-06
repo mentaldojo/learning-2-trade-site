@@ -4,12 +4,16 @@ import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import TopNav from '../components/layout/TopNav'
 import Footer from '../components/layout/Footer'
-import KeyboardNavigation from '../components/accessibility/KeyboardNavigation'
-import ScreenReaderSupport from '../components/accessibility/ScreenReaderSupport'
-import HighContrastToggle from '../components/accessibility/HighContrastToggle'
+import AccessibilityWrapper from '../components/accessibility/AccessibilityWrapper'
 import Script from 'next/script'
 
-const inter = Inter({ subsets: ['latin'] })
+const inter = Inter({ 
+  subsets: ['latin'],
+  weight: ["400", "500", "600", "700"],
+  display: 'swap',
+  preload: true,
+  fallback: ['system-ui', 'arial']
+})
 
 export const metadata: Metadata = {
   title: 'Professional Trading Success | Market Makers Method & PAT Indicator',
@@ -35,17 +39,28 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        {/* Google Analytics */}
-        <Script
-          src="https://www.googletagmanager.com/gtag/js?id=G-6RMP3C7SDE"
-          strategy="afterInteractive"
-        />
-        <Script id="google-analytics" strategy="afterInteractive">
+        {/* Defer Google Analytics until user interaction */}
+        <Script id="defer-ga" strategy="lazyOnload">
           {`
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
-            gtag('config', 'G-6RMP3C7SDE');
+            (function() {
+              var loaded = false;
+              function loadGA() {
+                if (loaded) return;
+                loaded = true;
+                var script = document.createElement('script');
+                script.src = 'https://www.googletagmanager.com/gtag/js?id=G-6RMP3C7SDE';
+                script.async = true;
+                document.head.appendChild(script);
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                window.gtag = gtag;
+                gtag('js', new Date());
+                gtag('config', 'G-6RMP3C7SDE');
+              }
+              window.addEventListener('click', loadGA, { once: true });
+              window.addEventListener('scroll', loadGA, { once: true });
+              window.addEventListener('keydown', loadGA, { once: true });
+            })();
           `}
         </Script>
         <script
@@ -95,6 +110,7 @@ export default function RootLayout({
               "@type": "Product",
               "name": "PAT Indicator + Professional Trading Mentorship",
               "description": "Professional trading system including the PAT Indicator for TradingView and unlimited mentorship from Martin Cole.",
+              "image": "https://learning2trade.com/images/pat-indicator.jpg",
               "brand": {
                 "@type": "Brand",
                 "name": "Learning2Trade"
@@ -109,7 +125,42 @@ export default function RootLayout({
                 "priceCurrency": "USD",
                 "priceValidUntil": "2024-12-31",
                 "availability": "https://schema.org/InStock",
-                "url": "https://learning2trade.com"
+                "url": "https://learning2trade.com",
+                "hasMerchantReturnPolicy": {
+                  "@type": "MerchantReturnPolicy",
+                  "applicableCountry": "US",
+                  "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow",
+                  "merchantReturnDays": 30,
+                  "returnMethod": "https://schema.org/ReturnByMail",
+                  "returnFees": "https://schema.org/FreeReturn"
+                },
+                "shippingDetails": {
+                  "@type": "OfferShippingDetails",
+                  "shippingRate": {
+                    "@type": "MonetaryAmount",
+                    "value": "0",
+                    "currency": "USD"
+                  },
+                  "shippingDestination": {
+                    "@type": "DefinedRegion",
+                    "addressCountry": "US"
+                  },
+                  "deliveryTime": {
+                    "@type": "ShippingDeliveryTime",
+                    "handlingTime": {
+                      "@type": "QuantitativeValue",
+                      "minValue": "0",
+                      "maxValue": "1",
+                      "unitCode": "DAY"
+                    },
+                    "transitTime": {
+                      "@type": "QuantitativeValue",
+                      "minValue": "0",
+                      "maxValue": "1",
+                      "unitCode": "DAY"
+                    }
+                  }
+                }
               },
               "featureList": [
                 "PAT (Professional Activity Tracker) Indicator for TradingView",
@@ -137,9 +188,7 @@ export default function RootLayout({
         />
       </head>
       <body className={inter.className}>
-        <KeyboardNavigation />
-        <ScreenReaderSupport />
-        <HighContrastToggle />
+        <AccessibilityWrapper />
         <TopNav />
         <main id="main-content" tabIndex={-1}>
           {children}

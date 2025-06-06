@@ -33,9 +33,17 @@
 
 ## Typography
 
-### Font Families
-- Primary (Sans-serif): `Montserrat, sans-serif`
-- Secondary (Serif): `Georgia, Times New Roman, serif`
+### Primary Font
+- **Font Family:** Inter
+- **Weights Used:** 400, 500, 600, 700
+- **Usage:** All headings, body text, UI elements, and buttons
+- **Fallbacks:** system-ui, Arial
+- **Font Display:** swap
+
+### Rationale
+- Inter is chosen for its high readability, modern professional appearance, and excellent performance on web and mobile.
+- Using a single font family ensures brand consistency and reduces page load times.
+- No other font families (e.g., Montserrat, Georgia, Times New Roman) are to be used anywhere on the site.
 
 ### Font Sizes
 ```css
@@ -329,4 +337,17 @@ className="text-sm sm:text-base md:text-lg"
    - Follow the typography hierarchy
    - Use appropriate spacing
    - Maintain consistent styling
-   - Implement responsive patterns 
+   - Implement responsive patterns
+
+## Accessibility
+- Maintain high color contrast
+- Use semantic HTML and ARIA where appropriate
+- Ensure all text uses Inter for maximum readability
+
+## Performance
+- Only Inter is loaded from Google Fonts, minimizing font payload
+- Font weights are limited to those actually used in the design
+
+---
+
+**Note:** If you reference this document for future design or development, always use Inter for all text. Do not reintroduce Montserrat, serif, or other font families. 

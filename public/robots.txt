@@ -2,5 +2,15 @@
 User-agent: *
 Allow: /
 
+# Disallow admin and api routes
+Disallow: /api/
+Disallow: /admin/
+
+# Crawl-delay for all bots
+Crawl-delay: 10
+
 # Sitemap location
+Sitemap: https://learning2trade.com/sitemap.xml
+
+# Additional sitemaps for different content types
 Sitemap: https://learning2trade.com/sitemap.xml 
