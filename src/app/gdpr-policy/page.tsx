@@ -2,7 +2,26 @@ import { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: 'GDPR Policy | Learning2Trade',
-  description: 'Our GDPR Policy outlines how we collect, use, and protect your personal data in compliance with the General Data Protection Regulation.'
+  description: 'Our GDPR Policy outlines how we collect, use, and protect your personal data in compliance with the General Data Protection Regulation.',
+  openGraph: {
+    title: 'GDPR Policy | Learning2Trade',
+    description: 'Our GDPR Policy outlines how we collect, use, and protect your personal data in compliance with the General Data Protection Regulation.',
+    url: 'https://learning2trade.com/gdpr-policy',
+    images: [
+      {
+        url: 'https://learning2trade.com/images/og-default.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'Learning2Trade GDPR Policy'
+      }
+    ]
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'GDPR Policy | Learning2Trade',
+    description: 'Our GDPR Policy outlines how we collect, use, and protect your personal data in compliance with the General Data Protection Regulation.',
+    images: ['https://learning2trade.com/images/og-default.jpg']
+  }
 };
 
 export default function GDPRPolicyPage() {

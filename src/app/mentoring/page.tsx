@@ -1,8 +1,28 @@
 import Link from 'next/link';
+import { Metadata } from 'next';
 
-export const metadata = {
+export const metadata: Metadata = {
   title: 'Trader Mentoring | Learning2Trade',
-  description: 'Experience personal trading mentorship and guidance, fully integrated with the PAT Indicator and a supportive community.'
+  description: 'Experience personal trading mentorship and guidance, fully integrated with the PAT Indicator and a supportive community.',
+  openGraph: {
+    title: 'Trader Mentoring | Learning2Trade',
+    description: 'Experience personal trading mentorship and guidance, fully integrated with the PAT Indicator and a supportive community.',
+    url: 'https://learning2trade.com/mentoring',
+    images: [
+      {
+        url: 'https://learning2trade.com/images/og-default.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'Learning2Trade Mentoring'
+      }
+    ]
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Trader Mentoring | Learning2Trade',
+    description: 'Experience personal trading mentorship and guidance, fully integrated with the PAT Indicator and a supportive community.',
+    images: ['https://learning2trade.com/images/og-default.jpg']
+  }
 };
 
 export default function TraderMentoringPage() {

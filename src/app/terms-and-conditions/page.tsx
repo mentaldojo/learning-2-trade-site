@@ -3,6 +3,25 @@ import { Metadata } from 'next';
 export const metadata: Metadata = {
   title: 'Terms and Conditions | Learning2Trade',
   description: 'Terms and conditions for Learning2Trade services, including PAT Indicator and Trading Mentorship.',
+  openGraph: {
+    title: 'Terms and Conditions | Learning2Trade',
+    description: 'Terms and conditions for Learning2Trade services, including PAT Indicator and Trading Mentorship.',
+    url: 'https://learning2trade.com/terms-and-conditions',
+    images: [
+      {
+        url: 'https://learning2trade.com/images/og-default.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'Learning2Trade Terms and Conditions'
+      }
+    ]
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Terms and Conditions | Learning2Trade',
+    description: 'Terms and conditions for Learning2Trade services, including PAT Indicator and Trading Mentorship.',
+    images: ['https://learning2trade.com/images/og-default.jpg']
+  }
 };
 
 export default function TermsAndConditions() {

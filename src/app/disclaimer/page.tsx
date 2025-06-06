@@ -4,6 +4,25 @@ import Link from 'next/link';
 export const metadata: Metadata = {
   title: 'Disclaimer | Learning2Trade',
   description: 'Important disclaimer information for Learning2Trade services, including trading risks and educational content.',
+  openGraph: {
+    title: 'Disclaimer | Learning2Trade',
+    description: 'Important disclaimer information for Learning2Trade services, including trading risks and educational content.',
+    url: 'https://learning2trade.com/disclaimer',
+    images: [
+      {
+        url: 'https://learning2trade.com/images/og-default.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'Learning2Trade Disclaimer'
+      }
+    ]
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Disclaimer | Learning2Trade',
+    description: 'Important disclaimer information for Learning2Trade services, including trading risks and educational content.',
+    images: ['https://learning2trade.com/images/og-default.jpg']
+  }
 };
 
 export default function Disclaimer() {

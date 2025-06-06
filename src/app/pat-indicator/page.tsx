@@ -1,8 +1,28 @@
 import Link from 'next/link';
+import { Metadata } from 'next';
 
-export const metadata = {
+export const metadata: Metadata = {
   title: 'PAT Indicator & Mentoring | Learning2Trade',
-  description: 'Discover the PAT Indicator for TradingView and our comprehensive mentoring and training portal. Consistency, clarity, and confidence for every trader.'
+  description: 'Discover the PAT Indicator for TradingView and our comprehensive mentoring and training portal. Consistency, clarity, and confidence for every trader.',
+  openGraph: {
+    title: 'PAT Indicator & Mentoring | Learning2Trade',
+    description: 'Discover the PAT Indicator for TradingView and our comprehensive mentoring and training portal. Consistency, clarity, and confidence for every trader.',
+    url: 'https://learning2trade.com/pat-indicator',
+    images: [
+      {
+        url: 'https://learning2trade.com/images/pat-og.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'PAT Indicator for TradingView'
+      }
+    ]
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'PAT Indicator & Mentoring | Learning2Trade',
+    description: 'Discover the PAT Indicator for TradingView and our comprehensive mentoring and training portal. Consistency, clarity, and confidence for every trader.',
+    images: ['https://learning2trade.com/images/pat-og.jpg']
+  }
 };
 
 export default function PatSalesPage() {

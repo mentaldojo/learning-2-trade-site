@@ -3,6 +3,25 @@ import { Metadata } from 'next';
 export const metadata: Metadata = {
   title: 'Cookie Policy | Learning2Trade',
   description: 'Cookie policy for Learning2Trade services, explaining how we use cookies and similar technologies.',
+  openGraph: {
+    title: 'Cookie Policy | Learning2Trade',
+    description: 'Cookie policy for Learning2Trade services, explaining how we use cookies and similar technologies.',
+    url: 'https://learning2trade.com/cookie-policy',
+    images: [
+      {
+        url: 'https://learning2trade.com/images/og-default.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'Learning2Trade Cookie Policy'
+      }
+    ]
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Cookie Policy | Learning2Trade',
+    description: 'Cookie policy for Learning2Trade services, explaining how we use cookies and similar technologies.',
+    images: ['https://learning2trade.com/images/og-default.jpg']
+  }
 };
 
 export default function CookiePolicy() {

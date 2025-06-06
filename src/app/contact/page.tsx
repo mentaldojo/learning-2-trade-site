@@ -3,7 +3,26 @@ import Image from 'next/image';
 
 export const metadata: Metadata = {
   title: 'Contact Me | Learning2Trade',
-  description: 'Get in touch with Learning2Trade for personalized trading mentorship and support.'
+  description: 'Get in touch with Learning2Trade for personalized trading mentorship and support.',
+  openGraph: {
+    title: 'Contact Me | Learning2Trade',
+    description: 'Get in touch with Learning2Trade for personalized trading mentorship and support.',
+    url: 'https://learning2trade.com/contact',
+    images: [
+      {
+        url: 'https://learning2trade.com/images/og-default.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'Contact Learning2Trade'
+      }
+    ]
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Contact Me | Learning2Trade',
+    description: 'Get in touch with Learning2Trade for personalized trading mentorship and support.',
+    images: ['https://learning2trade.com/images/og-default.jpg']
+  }
 };
 
 export default function ContactPage() {

@@ -3,6 +3,25 @@ import { Metadata } from 'next';
 export const metadata: Metadata = {
   title: 'Privacy Policy | Learning2Trade',
   description: 'Privacy policy for Learning2Trade services, including data collection, usage, and protection practices.',
+  openGraph: {
+    title: 'Privacy Policy | Learning2Trade',
+    description: 'Privacy policy for Learning2Trade services, including data collection, usage, and protection practices.',
+    url: 'https://learning2trade.com/privacy-policy',
+    images: [
+      {
+        url: 'https://learning2trade.com/images/og-default.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'Learning2Trade Privacy Policy'
+      }
+    ]
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Privacy Policy | Learning2Trade',
+    description: 'Privacy policy for Learning2Trade services, including data collection, usage, and protection practices.',
+    images: ['https://learning2trade.com/images/og-default.jpg']
+  }
 };
 
 export default function PrivacyPolicy() {
