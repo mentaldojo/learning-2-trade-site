@@ -169,19 +169,6 @@ sm:mb-16: 4rem      /* 64px */
 
 ## Animation Guidelines
 
-### Framer Motion Patterns
-```jsx
-// Fade In Up Animation
-<motion.div
-  initial={{ opacity: 0, y: 40 }}
-  whileInView={{ opacity: 1, y: 0 }}
-  viewport={{ once: true, amount: 0.3 }}
-  transition={{ duration: 0.7, ease: 'easeOut' }}
->
-  {/* Content */}
-</motion.div>
-```
-
 ### Animation Best Practices
 1. **Immediate Content Visibility**
    - Always show critical content (headers, first section) immediately
@@ -347,6 +334,15 @@ className="text-sm sm:text-base md:text-lg"
 ## Performance
 - Only Inter is loaded from Google Fonts, minimizing font payload
 - Font weights are limited to those actually used in the design
+
+## UI/UX Philosophy (2024 Update)
+- **Performance-first:** All above-the-fold animations and heavy dependencies have been removed. Only Inter font is used for all text, loaded with `display: swap` and preloaded for speed.
+- **Accessibility:** Semantic HTML, skip links, focus rings, ARIA labels, and high-contrast support are implemented throughout. All content is keyboard navigable and screen reader friendly.
+- **Consistency:** Unified color palette, spacing, and component patterns. No font overrides or alternative font families are permitted.
+- **Simplicity:** Animations are minimal and only used for non-critical content. No Framer Motion or similar libraries are present in the codebase.
+- **SEO & Rich Results:** All key pages include Open Graph, Twitter, and JSON-LD structured data for best-in-class SEO and sharing.
+
+- **Note:** As of 2024, Framer Motion and all above-the-fold animations have been removed for performance. Only minimal, CSS-based transitions are permitted for non-critical content.
 
 ---
 
