@@ -28,6 +28,26 @@ export const metadata: Metadata = {
 export default function TraderMentoringPage() {
   return (
     <main className="bg-white min-h-screen">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+        "@context": "https://schema.org/",
+        "@type": "Product",
+        "name": "Trader Mentoring",
+        "image": [
+          "https://learning2trade.com/images/og-default.jpg"
+        ],
+        "description": "Experience personal trading mentorship and guidance, fully integrated with the PAT Indicator and a supportive community.",
+        "brand": {
+          "@type": "Brand",
+          "name": "Learning2Trade"
+        },
+        "offers": {
+          "@type": "Offer",
+          "url": "https://www.learning2trade.com/mentoring",
+          "priceCurrency": "USD",
+          "price": "REPLACE_WITH_PRICE",
+          "availability": "https://schema.org/InStock"
+        }
+      }) }} />
       {/* Hero / Attention */}
       <section className="bg-black text-white py-16 sm:py-24 px-4 text-center relative overflow-hidden">
         {/* Geometric backdrop */}

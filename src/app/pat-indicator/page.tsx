@@ -28,6 +28,26 @@ export const metadata: Metadata = {
 export default function PatSalesPage() {
   return (
     <main className="bg-white min-h-screen">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+        "@context": "https://schema.org/",
+        "@type": "Product",
+        "name": "PAT Indicator + Professional Trading Mentorship",
+        "image": [
+          "https://learning2trade.com/images/pat-og.jpg"
+        ],
+        "description": "Professional trading system including the PAT Indicator for TradingView and unlimited mentorship from Martin Cole.",
+        "brand": {
+          "@type": "Brand",
+          "name": "Learning2Trade"
+        },
+        "offers": {
+          "@type": "Offer",
+          "url": "https://www.learning2trade.com/pat-indicator",
+          "priceCurrency": "USD",
+          "price": "REPLACE_WITH_PRICE",
+          "availability": "https://schema.org/InStock"
+        }
+      }) }} />
       {/* Hero Section */}
       <section className="bg-black text-white py-16 sm:py-24 px-4 text-center relative overflow-hidden">
         {/* Geometric backdrop */}
