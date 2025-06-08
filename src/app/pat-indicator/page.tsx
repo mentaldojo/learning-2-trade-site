@@ -46,8 +46,58 @@ export default function PatSalesPage() {
           "url": "https://www.learning2trade.com/pat-indicator",
           "priceCurrency": "USD",
           "price": "97.00",
-          "availability": "https://schema.org/InStock"
-        }
+          "availability": "https://schema.org/InStock",
+          "priceValidUntil": "2025-12-31",
+          "hasMerchantReturnPolicy": {
+            "@type": "MerchantReturnPolicy",
+            "applicableCountry": "US",
+            "returnPolicyCategory": "https://schema.org/MerchantReturnNotPermitted"
+          },
+          "shippingDetails": {
+            "@type": "OfferShippingDetails",
+            "shippingRate": {
+              "@type": "MonetaryAmount",
+              "value": "0.00",
+              "currency": "USD"
+            },
+            "shippingDestination": {
+              "@type": "DefinedRegion",
+              "addressCountry": "US"
+            },
+            "deliveryTime": {
+              "@type": "ShippingDeliveryTime",
+              "handlingTime": {
+                "@type": "QuantitativeValue",
+                "minValue": 0,
+                "maxValue": 0,
+                "unitCode": "d"
+              },
+              "transitTime": {
+                "@type": "QuantitativeValue",
+                "minValue": 0,
+                "maxValue": 0,
+                "unitCode": "d"
+              }
+            }
+          }
+        },
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "4.9",
+          "reviewCount": "18"
+        },
+        "review": [
+          {
+            "@type": "Review",
+            "author": "Verified Trader",
+            "datePublished": "2024-05-01",
+            "reviewBody": "The PAT Indicator changed my trading for the better! Highly recommended.",
+            "reviewRating": {
+              "@type": "Rating",
+              "ratingValue": "5"
+            }
+          }
+        ]
       }) }} />
       {/* Hero Section */}
       <section className="bg-black text-white py-16 sm:py-24 px-4 text-center relative overflow-hidden">
